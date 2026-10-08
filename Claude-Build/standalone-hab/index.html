@@ -6,22 +6,42 @@
 <title>HAB Sauce — Small Batch Hot Sauce</title>
 <meta name="description" content="Award-winning small-batch hot sauce, chili crisps, and artist-collab flavors made in Portland, Oregon.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Schibsted+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></symbol>
+<symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3l1.5 2.5V21a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V7.5L10 5z"/><path d="M8.5 13h7"/></symbol>
+<symbol id="i-pan" viewBox="0 0 24 24"><circle cx="10" cy="14" r="6"/><path d="M15 10l6-6"/><path d="M7 14h6"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/></symbol>
+<symbol id="i-chili" viewBox="0 0 24 24"><path d="M5 8c0 8 6 13 14 12-1-4-3-5-5-6-2-2-1-6-4-7-2-1-5 0-5 1z"/><path d="M13 7c0-2 1-3 3-3"/></symbol>
+<symbol id="i-chef" viewBox="0 0 24 24"><path d="M7 14a4 4 0 1 1 1-7.8 4.5 4.5 0 0 1 8 0A4 4 0 1 1 17 14v6H7z"/><path d="M7 17h10"/></symbol>
+<symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="5"/><path d="M8 3h8l-2.5 6h-3z"/><path d="M12 13v4"/></symbol>
+<symbol id="i-olive" viewBox="0 0 24 24"><ellipse cx="11" cy="14" rx="5" ry="7.5" transform="rotate(35 11 14)"/><path d="M15 6c1-2 3-3 5-3"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15 0 10-6 15-14 15z"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6z"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 2 2v9"/><path d="M10 3v7a2 2 0 0 1-2 2"/><path d="M18 21V3c-3 1-4 4-4 8h4"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.5-6s6.5 2 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c3 0 4.5 2 4.5 5"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
 <div class="announce">HAB SAUCE WINS BEST SAUCES AWARD — <a href="#">Read the story</a></div>
 
 <header class="site">
   <div class="wrap bar">
     <a class="logo" href="#">HAB <b>SAUCE</b></a>
-    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.main').classList.toggle('open')">☰</button>
-    <nav class="main">
-      <div class="has-drop"><a href="#awards">Hot Sauce ▾</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-shut" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <nav class="main" id="site-nav" aria-label="Primary">
+      <div class="has-drop"><a href="#awards">Hot Sauce<svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></a>
         <div class="drop"><a href="#build">Build a Box</a><a href="#">Green / Red Sauces</a><a href="#awards">Award Winners</a><a href="#">Sauce Lords Premium</a><a href="#">Heat Levels</a><a href="#">Artist Collaborations</a></div></div>
       <a href="#">Marinades &amp; Glazes</a>
       <a href="#crisps">Chili Crisps</a>
-      <div class="has-drop"><a href="#">Asian Fusion ▾</a><div class="drop"><a href="#">Soy Sauce</a><a href="#">All Asian Fusion</a></div></div>
+      <div class="has-drop"><a href="#">Asian Fusion<svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></a><div class="drop"><a href="#">Soy Sauce</a><a href="#">All Asian Fusion</a></div></div>
       <a href="#">Hot Mustard</a>
       <a href="#">Hot Honey</a>
       <a href="#">Pepper Jam</a>
@@ -33,7 +53,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 <section class="hero">
   <div class="wrap">
     <h1>Get Some Crack</h1>
@@ -45,39 +65,38 @@
 <section class="dark" id="build">
   <div class="wrap split">
     <div>
-      <p class="kicker">Unique hot sauces</p>
-      <h2>Build Your Own Sauce Box</h2>
+            <h2>Build Your Own Sauce Box</h2>
       <p>Small-batch, artist-collab flavors like Asian Hickory BBQ, Spicy Soy, and Oregon Seaweed Chili Crisp. Made in the Northwest — Portland, Oregon specifically.</p>
       <a class="btn" href="#">Build Your Sauce Box</a>
     </div>
-    <div class="media">Sauce box photo</div>
+    <div class="media" role="img" aria-label="Photo placeholder">Sauce box photo</div>
   </div>
 </section>
 
 <section class="center" id="awards">
   <div class="wrap">
     <h2>Award Winning Sauces</h2>
-    <p class="lead">HAB Sauce brings home hardware. 🏆 With 50+ awards for its bold, small-batch sauces, HAB was crowned the #1 World's Best Small-Batch Hot Sauce Company by Old Boney Mountain in 2025.</p>
+    <p class="lead">HAB Sauce brings home hardware. With 50+ awards for its bold, small-batch sauces, HAB was crowned the #1 World's Best Small-Batch Hot Sauce Company by Old Boney Mountain in 2025.</p>
     <div class="grid g4">
       <article class="prod a"><div class="img"><span class="badge">World Award Winner</span>Bottle</div><h3>Spicy Sweet Soy Sauce</h3><div class="heat">Medium</div><div class="price">$12.99</div></article>
       <article class="prod d"><div class="img">Bottle</div><h3>The Golden Child Scotch Bonnet Black Garlic Spicy Sweet Soy Sauce 5 oz</h3><div class="heat">Hot</div><div class="price">$13.99</div></article>
       <article class="prod b"><div class="img"><span class="badge sale">Sale</span>Bottle</div><h3>Green Chile Crack Sauce — Label by @kujorock</h3><div class="heat">Medium</div><div class="price"><s>$14.00</s>$12.99</div></article>
       <article class="prod c"><div class="img"><span class="badge sale">Sale</span>Jar</div><h3>Seaweed Chili Crisp — Label by Stevie Shao</h3><div class="heat">Mild</div><div class="price"><s>$18.00</s>$15.00</div></article>
     </div>
-    <p style="margin-top:32px"><a class="btn out" href="#">View all</a></p>
+    <p class="more"><a class="btn out" href="#" aria-label="View all award winning sauces">View all</a></p>
   </div>
 </section>
 
 <section class="alt center">
   <div class="wrap">
     <h2>Let customers speak for us</h2>
-    <p class="lead" style="margin-bottom:28px">from 176 reviews</p>
-    <div class="grid g3">
-      <div class="quote"><div class="stars">★★★★★</div><p>“It has a well balanced medium between the sweet, rich cocoa, and heat…”</p><strong>William</strong></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“Incredible flavor, killer quality, and stellar customer service/shipping…”</p><strong>Justin</strong></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“The ultimate dill pickle hot sauce (if your coworkers don't steal it…)”</p><strong>Justin</strong></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“I LOVE this smoked hot sauce!!”</p><strong>Kelli</strong></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“One of the GOAT verde sauces!!! I can't even count how many bottles…”</p><strong>Guy</strong></div>
+    <p class="lead">from 176 reviews</p>
+    <div class="grid quotes">
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“It has a well balanced medium between the sweet, rich cocoa, and heat…”</p><strong>William</strong></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“Incredible flavor, killer quality, and stellar customer service/shipping…”</p><strong>Justin</strong></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“The ultimate dill pickle hot sauce (if your coworkers don't steal it…)”</p><strong>Justin</strong></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“I LOVE this smoked hot sauce!!”</p><strong>Kelli</strong></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“One of the GOAT verde sauces!!! I can't even count how many bottles…”</p><strong>Guy</strong></div>
     </div>
   </div>
 </section>
@@ -91,18 +110,18 @@
       <article class="prod a"><div class="img"><span class="badge sale">Sale</span>Jar</div><h3>Peanut Chili Crisp 9 oz</h3><div class="heat">Medium</div><div class="price"><s>$18.00</s>$15.00</div></article>
       <article class="prod d"><div class="img">Jar</div><h3>Extra Hot Spicy Seaweed Chili Crisp</h3><div class="heat">Hot</div><div class="price">$20.00</div></article>
     </div>
-    <p style="margin-top:32px"><a class="btn out" href="#">View all</a></p>
+    <p class="more"><a class="btn out" href="#" aria-label="View all chili crisps">View all</a></p>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap center">
     <h2>From the Lab</h2>
-    <div class="grid g2" style="margin-top:32px;text-align:left">
+    <div class="grid g2 start">
       <article class="post"><div class="img"></div><div class="d">September 1, 2026</div><h3>HAB Sauce Label Artist Spotlight: KujoRock</h3><p>Angel Van Overeem is a multidisciplinary artist whose work pulls from graffiti, street art, illustration, hip-hop, and underground culture.</p></article>
       <article class="post"><div class="img"></div><div class="d">August 27, 2026</div><h3>Minnesota Maple Is Back: HAB Sauce x Atmosphere</h3><p>Atmosphere isn't just another name in independent hip-hop. For three decades, Slug and Ant have defined underground rap.</p></article>
     </div>
-    <p style="margin-top:24px"><a class="btn out" href="#">View all</a></p>
+    <p class="more"><a class="btn out" href="#" aria-label="View all posts from the lab">View all</a></p>
   </div>
 </section>
 
@@ -110,12 +129,12 @@
   <div class="wrap">
     <h2>Why choose HAB Sauce?</h2>
     <p class="lead">Out of all of the hot sauce brands out there, this is why we believe you should trust HAB Sauce with your food…</p>
-    <div class="grid g3" style="text-align:left">
-      <div class="item"><div class="media">Image</div><h3>Flavor Comes First. Always.</h3><p>We don't believe great sauce is about overwhelming heat, it's about creating bold, unforgettable flavors. Every recipe is crafted to complement your food.</p></div>
-      <div class="item"><div class="media">Image</div><h3>Crafted in Small Batches</h3><p>Made in Oregon with premium ingredients and carefully developed recipes — the kind of care that earns 50+ awards.</p></div>
-      <div class="item"><div class="media">Image</div><h3>Artist Collaborations</h3><p>We partner with underground artists and musicians to create limited-edition sauces from the ground up.</p></div>
-      <div class="item"><div class="media">Image</div><h3>Unexpected Ingredients</h3><p>From Oregon Raspberry Scotch Bonnet Pepper Jam to savory seaweed chili crisp — bold, Asian-inspired flavors you won't find anywhere else.</p></div>
-      <div class="item"><div class="media">Image</div><h3>Made to Be Used on Everything</h3><p>Chicken, steak, wings, burgers, pizza, eggs, ramen, rice. If it needs more flavor, it probably needs HAB Sauce.</p></div>
+    <div class="grid g3 start">
+      <div class="item"><div class="media" role="img" aria-label="Photo placeholder"></div><h3>Flavor Comes First. Always.</h3><p>We don't believe great sauce is about overwhelming heat, it's about creating bold, unforgettable flavors. Every recipe is crafted to complement your food.</p></div>
+      <div class="item"><div class="media" role="img" aria-label="Photo placeholder"></div><h3>Crafted in Small Batches</h3><p>Made in Oregon with premium ingredients and carefully developed recipes — the kind of care that earns 50+ awards.</p></div>
+      <div class="item"><div class="media" role="img" aria-label="Photo placeholder"></div><h3>Artist Collaborations</h3><p>We partner with underground artists and musicians to create limited-edition sauces from the ground up.</p></div>
+      <div class="item"><div class="media" role="img" aria-label="Photo placeholder"></div><h3>Unexpected Ingredients</h3><p>From Oregon Raspberry Scotch Bonnet Pepper Jam to savory seaweed chili crisp — bold, Asian-inspired flavors you won't find anywhere else.</p></div>
+      <div class="item"><div class="media" role="img" aria-label="Photo placeholder"></div><h3>Made to Be Used on Everything</h3><p>Chicken, steak, wings, burgers, pizza, eggs, ramen, rice. If it needs more flavor, it probably needs HAB Sauce.</p></div>
     </div>
   </div>
 </section>
@@ -137,10 +156,9 @@
 
 <section class="dark center news">
   <div class="wrap">
-    <p class="kicker">Sign up to have early access to order the newest drops</p>
     <h2>Sign up for Sauce Drops</h2>
-    <p>Be the first to know about new sauce drops, events, exclusive deals, and insider news.</p>
-    <form onsubmit="return false"><input type="email" placeholder="Email" aria-label="Email"><button class="btn">Sign up</button></form>
+    <p>Get early access to order the newest drops, and be the first to know about events, exclusive deals, and insider news.</p>
+    <form class="demo-form" novalidate><label class="sr-only" for="email-1">Email address</label><input id="email-1" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email" required><button class="btn" type="submit">Sign up</button><p class="form-note" role="status" aria-live="polite"></p></form>
   </div>
 </section>
 </main>
@@ -148,10 +166,10 @@
 <footer class="site">
   <div class="wrap">
     <div class="fcols">
-      <div><h4>Our Company</h4><a href="#">Find a store</a><a href="#">Our Mission</a><a href="#">About the Maker</a><a href="#">Wholesale</a><a href="#">News</a><a href="#">Contact</a></div>
-      <div><h4>Small Batch Hot Sauce</h4><p>Made by hand, using high-quality ingredients to deliver unforgettable heat and flavor for food lovers and spice enthusiasts alike.</p><p>Facebook &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; YouTube</p></div>
+      <div><h3 class="fh">Our Company</h3><a href="#">Find a store</a><a href="#">Our Mission</a><a href="#">About the Maker</a><a href="#">Wholesale</a><a href="#">News</a><a href="#">Contact</a></div>
+      <div><h3 class="fh">Small Batch Hot Sauce</h3><p>Made by hand, using high-quality ingredients to deliver unforgettable heat and flavor for food lovers and spice enthusiasts alike.</p><p>Facebook &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; YouTube</p></div>
     </div>
-    <div class="fbrand">HAB Sauce</div>
+    <div class="fbrand" aria-hidden="true">HAB Sauce</div>
     <div class="fbottom">
       <div>© 2026, HAB Sauce — Small batch hot sauce</div>
       <div class="legal"><a href="#">Privacy policy</a><a href="#">Refund policy</a><a href="#">Terms of service</a><a href="#">Shipping policy</a><a href="#">Contact information</a><a href="#">Legal notice</a></div>
@@ -159,5 +177,6 @@
     <div class="pay">AMEX · APPLE PAY · DISCOVER · GOOGLE PAY · MASTERCARD · PAYPAL · SHOP PAY · VISA</div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -10,16 +10,36 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/></symbol>
+<symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3l1.5 2.5V21a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V7.5L10 5z"/><path d="M8.5 13h7"/></symbol>
+<symbol id="i-pan" viewBox="0 0 24 24"><circle cx="10" cy="14" r="6"/><path d="M15 10l6-6"/><path d="M7 14h6"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/></symbol>
+<symbol id="i-chili" viewBox="0 0 24 24"><path d="M5 8c0 8 6 13 14 12-1-4-3-5-5-6-2-2-1-6-4-7-2-1-5 0-5 1z"/><path d="M13 7c0-2 1-3 3-3"/></symbol>
+<symbol id="i-chef" viewBox="0 0 24 24"><path d="M7 14a4 4 0 1 1 1-7.8 4.5 4.5 0 0 1 8 0A4 4 0 1 1 17 14v6H7z"/><path d="M7 17h10"/></symbol>
+<symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="5"/><path d="M8 3h8l-2.5 6h-3z"/><path d="M12 13v4"/></symbol>
+<symbol id="i-olive" viewBox="0 0 24 24"><ellipse cx="11" cy="14" rx="5" ry="7.5" transform="rotate(35 11 14)"/><path d="M15 6c1-2 3-3 5-3"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15 0 10-6 15-14 15z"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6z"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 2 2v9"/><path d="M10 3v7a2 2 0 0 1-2 2"/><path d="M18 21V3c-3 1-4 4-4 8h4"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.5-6s6.5 2 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c3 0 4.5 2 4.5 5"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
 
 <div class="announce"><span>Free Shipping on Orders $50+</span><span>Virginia-Crafted with Organic Ingredients</span><span>Trusted by 2,000+ Home Cooks</span></div>
 
 <header class="site">
   <div class="wrap bar">
     <a class="logo" href="index.html">Mad <b>Hatter</b></a>
-    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.main').classList.toggle('open')">☰</button>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-shut" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <nav class="main" id="site-nav" aria-label="Primary">
       <div class="has-drop">
-        <a href="#shop">Shop ▾</a>
+        <a href="#shop">Shop<svg class="i chev" aria-hidden="true"><use href="#i-chev"/></svg></a>
         <div class="drop">
           <a href="#shop">By Heat Level</a>
           <a href="#shop">Bundles &amp; Packs</a>
@@ -36,23 +56,23 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 <section class="hero">
   <div class="wrap">
     <h1>Heighten your Hotness: Your Kitchen's Secret Weapon</h1>
     <p class="sub">The one bottle that replaces three: marinade, finishing oil, and cooking sauce</p>
     <div class="btns"><a class="btn" href="#shop">Discover the Difference</a><a class="btn ghost" href="#recipes">See Recipe Ideas</a></div>
-    <div class="badges"><span>✓ Made with First-Press EVOO</span><span>✓ Organic Habaneros</span><span>✓ Virginia Small Batch Crafted</span></div>
+    <div class="badges"><span><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Made with First-Press EVOO</span><span><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Organic Habaneros</span><span><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Virginia Small Batch Crafted</span></div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2 class="center">The Super Condiment That Replaces 3 Bottles</h2>
-    <div class="cols c3" style="margin-top:40px">
-      <div class="col"><div class="ico">🍶</div><h3>Marinade Base</h3><p>For meal prep overnight magic. Transform plain proteins into restaurant-quality meals with depth and complexity.</p></div>
-      <div class="col"><div class="ico">🍳</div><h3>Cooking Sauce</h3><p>Stir-fry starter for 20-minute dinners. Add dimension to vegetables, proteins, and grains with one versatile ingredient.</p></div>
-      <div class="col"><div class="ico">✨</div><h3>Finishing Oil</h3><p>The final flourish for restaurant quality. Elevate any dish with a drizzle that brings heat, richness, and sophistication.</p></div>
+    <div class="cols c3 mt">
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-bottle"/></svg></div><h3>Marinade Base</h3><p>For meal prep overnight magic. Transform plain proteins into restaurant-quality meals with depth and complexity.</p></div>
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-pan"/></svg></div><h3>Cooking Sauce</h3><p>Stir-fry starter for 20-minute dinners. Add dimension to vegetables, proteins, and grains with one versatile ingredient.</p></div>
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-sparkle"/></svg></div><h3>Finishing Oil</h3><p>The final flourish for restaurant quality. Elevate any dish with a drizzle that brings heat, richness, and sophistication.</p></div>
     </div>
     <p class="statement"><strong>One bottle. Heightened possibilities.</strong> Mad Hatter ($24) vs. buying all 3 separately ($45+)</p>
   </div>
@@ -61,11 +81,11 @@
 <section class="alt">
   <div class="wrap">
     <h2 class="center">Trusted by Culinary Curators since 2012.</h2>
-    <div class="cols c4" style="margin-top:40px;gap:22px">
-      <div class="quote"><div class="stars">★★★★★</div><p>“This replaced my olive oil, hot sauce, AND marinade. My meal prep game completely changed.”</p><cite>— Sarah, 34, Mom of 2</cite></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“We use it for everything from weeknight stir-fries to finishing our dinner party dishes. It's become our kitchen essential.”</p><cite>— Marcus &amp; James, 36, Food Bloggers</cite></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“Finally, a condiment that keeps up with my schedule. Quality ingredients, maximum versatility.”</p><cite>— Linda, 41, Dinner Party Host</cite></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>“Started with the 'better than Sriracha' promise, stayed for the incredible depth of flavor. Now I use it on everything.”</p><cite>— Trevor, 29</cite></div>
+    <div class="cols c4 mt tight quotes">
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“This replaced my olive oil, hot sauce, AND marinade. My meal prep game completely changed.”</p><cite>— Sarah, 34, Mom of 2</cite></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“We use it for everything from weeknight stir-fries to finishing our dinner party dishes. It's become our kitchen essential.”</p><cite>— Marcus &amp; James, 36, Food Bloggers</cite></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“Finally, a condiment that keeps up with my schedule. Quality ingredients, maximum versatility.”</p><cite>— Linda, 41, Dinner Party Host</cite></div>
+      <div class="quote"><div class="stars" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div><p>“Started with the 'better than Sriracha' promise, stayed for the incredible depth of flavor. Now I use it on everything.”</p><cite>— Trevor, 29</cite></div>
     </div>
   </div>
 </section>
@@ -73,10 +93,10 @@
 <section>
   <div class="wrap center">
     <h2>Three Ways to Transform Your Hotness</h2>
-    <div class="cols c3" style="margin:40px 0">
-      <div class="col"><div class="ico">🌶️</div><h3>1. Choose Your Heat</h3><p>Mild, Medium, or Hot — all built on the same base of first-press extra virgin olive oil and organic habaneros.</p></div>
-      <div class="col"><div class="ico">👨‍🍳</div><h3>2. Use It Your Way</h3><p>Marinate overnight, cook with confidence, or finish like a chef. One bottle adapts to your cooking style.</p></div>
-      <div class="col"><div class="ico">🏅</div><h3>3. Taste the Difference</h3><p>Made with ingredients you can pronounce. No fillers, no artificial flavors — just pure, versatile flavor.</p></div>
+    <div class="cols c3 mt mb">
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-chili"/></svg></div><h3>1. Choose Your Heat</h3><p>Mild, Medium, or Hot — all built on the same base of first-press extra virgin olive oil and organic habaneros.</p></div>
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-chef"/></svg></div><h3>2. Use It Your Way</h3><p>Marinate overnight, cook with confidence, or finish like a chef. One bottle adapts to your cooking style.</p></div>
+      <div class="col"><div class="ico"><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg></div><h3>3. Taste the Difference</h3><p>Made with ingredients you can pronounce. No fillers, no artificial flavors — just pure, versatile flavor.</p></div>
     </div>
     <a class="btn" href="#shop">Shop Our Collection</a>
   </div>
@@ -85,18 +105,18 @@
 <section class="alt" id="shop">
   <div class="wrap center">
     <h2>Find Your Perfect Match</h2>
-    <div class="cols c4" style="margin-top:40px;gap:22px;text-align:left">
-      <article class="prod mild"><div class="img"></div><div class="body"><h3>Mad Hatter Mild</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. Perfect for meal prep, weeknight dinners, and entertaining.</p><div class="tags">🥗 Meal Prep · 🍖 Weeknight · 🎉 Entertaining</div><div class="price">$24 <small>Buy 3, Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
-      <article class="prod"><div class="img"></div><div class="body"><h3>Mad Hatter Medium</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. Warmth and flavor without the burn.</p><div class="tags">🥗 Meal Prep · 🍖 Weeknight · 🎁 Gifts</div><div class="price">$24 <small>Bestseller</small></div><a class="btn" href="#">Add to Cart</a></div></article>
-      <article class="prod hot"><div class="img"></div><div class="body"><h3>Mad Hatter Hot</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. For those who like it properly hot.</p><div class="tags">🍖 Weeknight · 🎉 Entertaining</div><div class="price">$24 <small>Buy 3, Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
-      <article class="prod pack"><div class="img"></div><div class="body"><h3>Meal Prep Pack (3 bottles)</h3><p class="desc">Pick your heat levels and stock the kitchen.</p><div class="tags">🥗 Meal Prep · 🎁 Gifts</div><div class="price">$65 <small>Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
+    <div class="cols c4 mt tight start">
+      <article class="prod mild"><div class="img"></div><div class="body"><h3>Mad Hatter Mild</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. Perfect for meal prep, weeknight dinners, and entertaining.</p><div class="tags">Meal Prep · Weeknight · Entertaining</div><div class="price">$24 <small>Buy 3, Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
+      <article class="prod"><div class="img"></div><div class="body"><h3>Mad Hatter Medium</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. Warmth and flavor without the burn.</p><div class="tags">Meal Prep · Weeknight · Gifts</div><div class="price">$24 <small>Bestseller</small></div><a class="btn" href="#">Add to Cart</a></div></article>
+      <article class="prod hot"><div class="img"></div><div class="body"><h3>Mad Hatter Hot</h3><p class="desc">Extra Virgin Olive Oil Hot Sauce. For those who like it properly hot.</p><div class="tags">Weeknight · Entertaining</div><div class="price">$24 <small>Buy 3, Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
+      <article class="prod pack"><div class="img"></div><div class="body"><h3>Meal Prep Pack (3 bottles)</h3><p class="desc">Pick your heat levels and stock the kitchen.</p><div class="tags">Meal Prep · Gifts</div><div class="price">$65 <small>Save $7</small></div><a class="btn" href="#">Add to Cart</a></div></article>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap split">
-    <div class="media">Kitchen photo</div>
+    <div class="media" role="img" aria-label="Photo placeholder">Kitchen photo</div>
     <div>
       <h2>Quality You Can Taste</h2>
       <p>We started with a simple question: what if hot sauce was built on extra virgin olive oil instead of vinegar?</p>
@@ -110,10 +130,10 @@
 <section class="alt" id="recipes">
   <div class="wrap center">
     <h2>Your New Go-To Recipes</h2>
-    <div class="cols c3" style="margin:40px 0;gap:26px;text-align:left">
-      <article class="recipe"><div class="img"></div><div class="body"><h3>20-Minute Weeknight Chicken</h3><p>Simple ingredients, restaurant results</p><div class="meta">⏱️ 25 min · 👤 4 servings</div></div></article>
-      <article class="recipe"><div class="img"></div><div class="body"><h3>Meal Prep Power Bowls</h3><p>Make ahead, enjoy all week</p><div class="meta">⏱️ 30 min · 👤 6 servings</div></div></article>
-      <article class="recipe"><div class="img"></div><div class="body"><h3>Dinner Party Salmon</h3><p>Impress your guests effortlessly</p><div class="meta">⏱️ 20 min · 👤 4 servings</div></div></article>
+    <div class="cols c3 mt mb start">
+      <article class="recipe"><div class="img"></div><div class="body"><h3>20-Minute Weeknight Chicken</h3><p>Simple ingredients, restaurant results</p><div class="meta"><span><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>25 min</span><span><svg class="i" aria-hidden="true"><use href="#i-person"/></svg>4 servings</span></div></div></article>
+      <article class="recipe"><div class="img"></div><div class="body"><h3>Meal Prep Power Bowls</h3><p>Make ahead, enjoy all week</p><div class="meta"><span><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>30 min</span><span><svg class="i" aria-hidden="true"><use href="#i-person"/></svg>6 servings</span></div></div></article>
+      <article class="recipe"><div class="img"></div><div class="body"><h3>Dinner Party Salmon</h3><p>Impress your guests effortlessly</p><div class="meta"><span><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>20 min</span><span><svg class="i" aria-hidden="true"><use href="#i-person"/></svg>4 servings</span></div></div></article>
     </div>
     <a class="btn" href="#">Explore All Recipes</a>
   </div>
@@ -123,7 +143,7 @@
   <div class="wrap">
     <h2>Join The Curator's Kitchen</h2>
     <p>Get our top 10 weeknight recipes plus 15% off your first order</p>
-    <form onsubmit="return false"><input type="email" placeholder="Enter your email" aria-label="Email"><button class="btn gold">Get My Recipes</button></form>
+    <form class="demo-form" novalidate><label class="sr-only" for="email-1">Email address</label><input id="email-1" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Enter your email" required><button class="btn gold" type="submit">Get My Recipes</button><p class="form-note" role="status" aria-live="polite"></p></form>
     <p class="fine">Join 3,800+ home cooks who've discovered the secret to easier, better-tasting meals. Unsubscribe anytime.</p>
   </div>
 </section>
@@ -131,7 +151,7 @@
 <section class="center">
   <div class="wrap">
     <h2>Ready to Transform Your Cooking?</h2>
-    <p style="max-width:720px;margin:0 auto 28px">Whether you're mastering meal prep, elevating weeknight dinners, or hosting your next dinner party, Mad Hatter gives you the versatility you need in one beautiful bottle.</p>
+    <p class="lead">Whether you're mastering meal prep, elevating weeknight dinners, or hosting your next dinner party, Mad Hatter gives you the versatility you need in one beautiful bottle.</p>
     <a class="btn big" href="#shop">Shop Bundles &amp; Save</a>
   </div>
 </section>
@@ -140,8 +160,8 @@
 <footer class="site">
   <div class="wrap">
     <div class="fnews">
-      <div><h3>Join The Curator's Kitchen</h3><p style="margin:.3em 0 0">Get recipes, cooking tips, and exclusive offers</p></div>
-      <form onsubmit="return false"><input type="email" placeholder="Email address" aria-label="Email"><button class="btn gold">Subscribe</button></form>
+      <div><h3>Join The Curator's Kitchen</h3><p class="flush">Get recipes, cooking tips, and exclusive offers</p></div>
+      <form class="demo-form" novalidate><label class="sr-only" for="email-2">Email address</label><input id="email-2" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address" required><button class="btn gold" type="submit">Subscribe</button><p class="form-note" role="status" aria-live="polite"></p></form>
     </div>
     <div class="fcols">
       <div><h4>Shop</h4><a href="#shop">By Heat Level</a><a href="#shop">Bundles &amp; Packs</a><a href="#shop">Gift Sets</a><a href="#shop">Subscribe &amp; Save</a></div>
@@ -149,7 +169,7 @@
       <div><h4>Community</h4><a href="#">The Curator's Circle (Loyalty)</a><a href="#">Customer Spotlights</a><a href="#">Share Your #MadHatterMoments</a><a href="#">Join Our Facebook Group</a></div>
       <div><h4>Company</h4><a href="our-story.html">Our Story</a><a href="#">Ingredient Sourcing</a><a href="#">Contact Us</a><a href="#">Wholesale Inquiry</a><a href="#">Press Kit</a></div>
     </div>
-    <div class="fbrand">Mad Hatter</div>
+    <div class="fbrand" aria-hidden="true">Mad Hatter</div>
     <div class="fbottom">
       <div>Trusted by 2,000+ Home Cooks &nbsp;·&nbsp; Instagram · Facebook · Pinterest · YouTube</div>
       <div class="legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Accessibility</a></div>
@@ -157,5 +177,6 @@
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
