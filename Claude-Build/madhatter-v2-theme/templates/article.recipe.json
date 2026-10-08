@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-recipe",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "accent_color": "#b5331f",
+        "corner_radius": 8,
+        "show_image": true,
+        "show_author": true,
+        "show_date": true,
+        "show_story": true,
+        "products_heading": "Shop this recipe",
+        "show_related": true,
+        "related_heading": "More recipes you'll love",
+        "related_count": 4
+      }
+    }
+  },
+  "order": ["main"]
+}

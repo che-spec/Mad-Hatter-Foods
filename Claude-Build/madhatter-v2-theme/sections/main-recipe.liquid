@@ -1,0 +1,510 @@
+{%- comment -%}
+  Recipe article section. Used by templates/article.recipe.json.
+  Data comes from article metafields (namespace "custom") — see RECIPE-TEMPLATE-SETUP.md.
+  The normal article body (article.content) is shown as the story above the recipe card.
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+  assign mf = article.metafields.custom
+
+  assign prep = mf.recipe_prep_time.value | default: 0
+  assign cook = mf.recipe_cook_time.value | default: 0
+  assign total = prep | plus: cook
+  assign servings = mf.recipe_servings.value | default: 0
+  assign difficulty = mf.recipe_difficulty.value
+  assign ingredients_lines = mf.recipe_ingredients.value | newline_to_br | split: '<br />'
+  assign steps_lines = mf.recipe_instructions.value | newline_to_br | split: '<br />'
+  assign nutrition_lines = mf.recipe_nutrition.value | newline_to_br | split: '<br />'
+  assign notes = mf.recipe_notes.value
+  assign recipe_products = mf.recipe_products.value
+  assign has_recipe = false
+  if ingredients_lines.size > 0 and mf.recipe_ingredients.value != blank
+    assign has_recipe = true
+  endif
+-%}
+
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .mh-recipe {
+    --mh-accent: {{ s.accent_color | default: '#b5331f' }};
+    --mh-accent-soft: color-mix(in srgb, var(--mh-accent) 10%, transparent);
+    --mh-line: rgb(var(--color-foreground-rgb, 0 0 0) / 0.15);
+    --mh-muted: rgb(var(--color-foreground-rgb, 0 0 0) / 0.65);
+    --mh-radius: {{ s.corner_radius }}px;
+    padding-block: {{ s.padding_top }}px {{ s.padding_bottom }}px;
+  }
+  .mh-recipe * { box-sizing: border-box; }
+  .mh-recipe__wrap { width: min(100% - 2rem, 1100px); margin-inline: auto; }
+  .mh-recipe__narrow { width: min(100% - 2rem, 760px); margin-inline: auto; }
+
+  /* Hero */
+  .mh-recipe__hero { display: grid; gap: 2rem; align-items: center; margin-bottom: 2rem; }
+  @media (min-width: 850px) {
+    .mh-recipe__hero--image { grid-template-columns: 1fr 1.1fr; }
+  }
+  .mh-recipe__eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: var(--mh-accent); font-weight: 600; margin: 0 0 .75rem; }
+  .mh-recipe__title { font-family: var(--font-heading--family); margin: 0 0 .75rem; line-height: 1.1; }
+  .mh-recipe__byline { color: var(--mh-muted); font-size: .9rem; margin: 0 0 1.25rem; }
+  .mh-recipe__summary { font-size: 1.05rem; line-height: 1.6; margin: 0 0 1.5rem; }
+  .mh-recipe__image { border-radius: var(--mh-radius); overflow: hidden; aspect-ratio: 4 / 3; background: var(--mh-accent-soft); }
+  .mh-recipe__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* Buttons */
+  .mh-recipe__actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .mh-btn {
+    appearance: none; cursor: pointer; font: inherit; font-size: .9rem; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.2rem;
+    border: 1px solid var(--mh-accent); border-radius: var(--mh-radius);
+    background: var(--mh-accent); color: #fff; line-height: 1;
+  }
+  .mh-btn:hover { filter: brightness(1.1); }
+  .mh-btn--ghost { background: transparent; color: var(--mh-accent); }
+  .mh-btn--ghost:hover { background: var(--mh-accent-soft); filter: none; }
+  .mh-btn[aria-pressed="true"] { background: var(--mh-accent); color: #fff; }
+  .mh-btn svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Meta strip */
+  .mh-recipe__meta {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    border-block: 1px solid var(--mh-line); margin-block: 2rem;
+  }
+  .mh-meta { text-align: center; padding: 1.1rem .5rem; }
+  .mh-meta + .mh-meta { border-inline-start: 1px solid var(--mh-line); }
+  .mh-meta__label { display: block; text-transform: uppercase; letter-spacing: .1em; font-size: .7rem; color: var(--mh-muted); margin-bottom: .35rem; }
+  .mh-meta__value { font-family: var(--font-heading--family); font-size: 1.4rem; line-height: 1.1; }
+  @media (max-width: 599px) { .mh-meta:nth-child(odd) { border-inline-start: 0; } }
+
+  /* Story */
+  .mh-recipe__story { margin-bottom: 3rem; }
+
+  /* Card */
+  .mh-card { border: 1px solid var(--mh-line); border-radius: var(--mh-radius); padding: clamp(1.25rem, 4vw, 2.5rem); background: rgb(var(--color-background-rgb, 255 255 255)); scroll-margin-top: 90px; }
+  .mh-card__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding-bottom: 1.25rem; margin-bottom: 1.75rem; border-bottom: 2px solid var(--mh-accent); }
+  .mh-card__title { font-family: var(--font-heading--family); margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+  .mh-card__grid { display: grid; gap: 2.5rem; }
+  @media (min-width: 850px) { .mh-card__grid { grid-template-columns: minmax(260px, 1fr) 2fr; } .mh-card__ingredients { position: sticky; top: 90px; align-self: start; } }
+  .mh-h { font-family: var(--font-heading--family); font-size: 1.25rem; margin: 0 0 1rem; }
+  .mh-sub { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--mh-accent); font-weight: 700; margin: 1.5rem 0 .6rem; }
+  .mh-sub:first-child { margin-top: 0; }
+
+  /* Servings stepper */
+  .mh-servings { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 1.25rem; font-size: .9rem; }
+  .mh-servings button { width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid var(--mh-accent); background: transparent; color: var(--mh-accent); font-size: 1.1rem; line-height: 1; cursor: pointer; }
+  .mh-servings button:hover { background: var(--mh-accent-soft); }
+  .mh-servings output { min-width: 2ch; text-align: center; font-weight: 700; font-size: 1.1rem; }
+
+  /* Ingredients */
+  .mh-list { list-style: none; margin: 0; padding: 0; }
+  .mh-ing { border-bottom: 1px dashed var(--mh-line); }
+  .mh-ing label { display: flex; gap: .75rem; padding: .6rem 0; cursor: pointer; align-items: flex-start; line-height: 1.4; }
+  .mh-ing input { margin-top: .25rem; accent-color: var(--mh-accent); flex: none; width: 1.05rem; height: 1.05rem; }
+  .mh-ing input:checked + span { text-decoration: line-through; opacity: .5; }
+
+  /* Steps */
+  .mh-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+  .mh-step { counter-increment: step; display: grid; grid-template-columns: 2.4rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--mh-line); line-height: 1.6; cursor: pointer; }
+  .mh-step::before { content: counter(step); width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--mh-accent-soft); color: var(--mh-accent); font-weight: 700; display: grid; place-items: center; font-family: var(--font-heading--family); }
+  .mh-step.is-done { opacity: .45; }
+  .mh-step.is-done::before { background: var(--mh-accent); color: #fff; }
+  .mh-recipe.is-cook-mode .mh-step { font-size: 1.2rem; }
+
+  /* Notes + nutrition */
+  .mh-extra { display: grid; gap: 2rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--mh-line); }
+  @media (min-width: 850px) { .mh-extra--two { grid-template-columns: 1.4fr 1fr; } }
+  .mh-notes { line-height: 1.6; }
+  .mh-nutrition { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  .mh-nutrition th, .mh-nutrition td { padding: .45rem 0; border-bottom: 1px solid var(--mh-line); text-align: start; font-weight: 400; }
+  .mh-nutrition td { text-align: end; font-weight: 600; }
+  .mh-fine { font-size: .75rem; color: var(--mh-muted); margin-top: .6rem; }
+
+  /* Sections below the card */
+  .mh-block { margin-top: 4rem; }
+  .mh-block__title { font-family: var(--font-heading--family); text-align: center; margin: 0 0 1.75rem; }
+  .mh-products { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.25rem; }
+  .mh-product { text-decoration: none; color: inherit; display: block; }
+  .mh-product__img { aspect-ratio: 1; border-radius: var(--mh-radius); overflow: hidden; background: var(--mh-accent-soft); margin-bottom: .75rem; }
+  .mh-product__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+  .mh-product:hover .mh-product__img img { transform: scale(1.04); }
+  .mh-product__title { font-size: .95rem; margin: 0 0 .2rem; }
+  .mh-product__price { color: var(--mh-muted); font-size: .9rem; }
+  .mh-related { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.5rem; }
+
+  .mh-toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: #222; color: #fff; padding: .6rem 1rem; border-radius: 6px; font-size: .85rem; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 50; }
+  .mh-toast.is-on { opacity: 1; }
+
+  @media print {
+    body * { visibility: hidden !important; }
+    .mh-card, .mh-card * { visibility: visible !important; }
+    .mh-card { position: absolute; inset: 0 auto auto 0; width: 100%; border: 0; padding: 0; }
+    .mh-noprint { display: none !important; }
+    .mh-step, .mh-ing { break-inside: avoid; }
+  }
+</style>
+
+<div class="mh-recipe section color-{{ s.color_scheme }}" data-mh-recipe data-base-servings="{{ servings }}">
+
+  {%- comment -%} ---------- HERO ---------- {%- endcomment -%}
+  <header class="mh-recipe__wrap mh-recipe__hero{% if article.image and s.show_image %} mh-recipe__hero--image{% endif %}">
+    <div>
+      {%- if article.tags.size > 0 -%}
+        <p class="mh-recipe__eyebrow">{{ article.tags | first | escape }}</p>
+      {%- endif -%}
+      <h1 class="mh-recipe__title">{{ article.title | escape }}</h1>
+      <p class="mh-recipe__byline">
+        {%- if s.show_author and article.author != blank -%}By {{ article.author | escape }} · {% endif -%}
+        {%- if s.show_date -%}{{ article.published_at | time_tag: format: 'date' }}{%- endif -%}
+      </p>
+      {%- assign summary = article.excerpt | default: '' -%}
+      {%- if summary != blank -%}
+        <div class="mh-recipe__summary">{{ summary }}</div>
+      {%- endif -%}
+      <div class="mh-recipe__actions mh-noprint">
+        {%- if has_recipe -%}
+          <a class="mh-btn" href="#recipe-card">Jump to recipe</a>
+          <button type="button" class="mh-btn mh-btn--ghost" data-mh-print>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg> Print
+          </button>
+        {%- endif -%}
+        <button type="button" class="mh-btn mh-btn--ghost" data-mh-share data-title="{{ article.title | escape }}">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v13"/></svg> Share
+        </button>
+      </div>
+    </div>
+    {%- if article.image and s.show_image -%}
+      <div class="mh-recipe__image">
+        {{ article.image | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 850px) 55vw, 100vw', widths: '600, 900, 1200, 1400', alt: article.image.alt | default: article.title }}
+      </div>
+    {%- endif -%}
+  </header>
+
+  {%- comment -%} ---------- META STRIP ---------- {%- endcomment -%}
+  {%- if has_recipe -%}
+    <div class="mh-recipe__wrap">
+      <div class="mh-recipe__meta">
+        {%- if prep > 0 -%}<div class="mh-meta"><span class="mh-meta__label">Prep</span><span class="mh-meta__value">{{ prep }} min</span></div>{%- endif -%}
+        {%- if cook > 0 -%}<div class="mh-meta"><span class="mh-meta__label">Cook</span><span class="mh-meta__value">{{ cook }} min</span></div>{%- endif -%}
+        {%- if total > 0 -%}<div class="mh-meta"><span class="mh-meta__label">Total</span><span class="mh-meta__value">{{ total }} min</span></div>{%- endif -%}
+        {%- if servings > 0 -%}<div class="mh-meta"><span class="mh-meta__label">Serves</span><span class="mh-meta__value">{{ servings }}</span></div>{%- endif -%}
+        {%- if difficulty != blank -%}<div class="mh-meta"><span class="mh-meta__label">Level</span><span class="mh-meta__value">{{ difficulty | escape }}</span></div>{%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ---------- STORY (article body) ---------- {%- endcomment -%}
+  {%- if article.content != blank and s.show_story -%}
+    <div class="mh-recipe__narrow mh-recipe__story rte">{{ article.content }}</div>
+  {%- endif -%}
+
+  {%- comment -%} ---------- RECIPE CARD ---------- {%- endcomment -%}
+  {%- if has_recipe -%}
+    <div class="mh-recipe__wrap">
+      <section class="mh-card" id="recipe-card" aria-labelledby="mh-card-title">
+        <div class="mh-card__head">
+          <h2 class="mh-card__title" id="mh-card-title">{{ article.title | escape }}</h2>
+          <div class="mh-recipe__actions mh-noprint">
+            <button type="button" class="mh-btn mh-btn--ghost" data-mh-cook aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-7 9-7 9 7 9 7-3.5 7-9 7-9-7-9-7z"/><circle cx="12" cy="12" r="3"/></svg> Cook mode
+            </button>
+            <button type="button" class="mh-btn mh-btn--ghost" data-mh-print>Print</button>
+          </div>
+        </div>
+
+        <div class="mh-card__grid">
+          <div class="mh-card__ingredients">
+            <h3 class="mh-h">Ingredients</h3>
+            {%- if servings > 0 -%}
+              <div class="mh-servings mh-noprint">
+                <span>Servings</span>
+                <button type="button" data-mh-minus aria-label="Fewer servings">−</button>
+                <output data-mh-servings aria-live="polite">{{ servings }}</output>
+                <button type="button" data-mh-plus aria-label="More servings">+</button>
+              </div>
+            {%- endif -%}
+
+            {%- assign open = false -%}
+            {%- for line in ingredients_lines -%}
+              {%- assign l = line | strip_newlines | strip -%}{%- assign head = l | slice: 0, 2 -%}
+              {%- if l == blank -%}{%- continue -%}{%- endif -%}
+              {%- if head == '##' -%}
+                {%- if open -%}</ul>{%- endif -%}
+                <h4 class="mh-sub">{{ l | remove_first: '##' | strip | escape }}</h4>
+                <ul class="mh-list">
+                {%- assign open = true -%}
+              {%- else -%}
+                {%- unless open -%}<ul class="mh-list">{%- assign open = true -%}{%- endunless -%}
+                <li class="mh-ing"><label><input type="checkbox"><span data-mh-ing>{{ l | escape }}</span></label></li>
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if open -%}</ul>{%- endif -%}
+          </div>
+
+          <div class="mh-card__method">
+            <h3 class="mh-h">Method</h3>
+            {%- assign open = false -%}
+            {%- for line in steps_lines -%}
+              {%- assign l = line | strip_newlines | strip -%}{%- assign head = l | slice: 0, 2 -%}
+              {%- if l == blank -%}{%- continue -%}{%- endif -%}
+              {%- if head == '##' -%}
+                {%- if open -%}</ol>{%- endif -%}
+                <h4 class="mh-sub">{{ l | remove_first: '##' | strip | escape }}</h4>
+                <ol class="mh-steps">
+                {%- assign open = true -%}
+              {%- else -%}
+                {%- unless open -%}<ol class="mh-steps">{%- assign open = true -%}{%- endunless -%}
+                <li class="mh-step" data-mh-step>{{ l | escape }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if open -%}</ol>{%- endif -%}
+          </div>
+        </div>
+
+        {%- assign has_nutrition = false -%}
+        {%- if mf.recipe_nutrition.value != blank -%}{%- assign has_nutrition = true -%}{%- endif -%}
+        {%- if notes != blank or has_nutrition -%}
+          <div class="mh-extra{% if notes != blank and has_nutrition %} mh-extra--two{% endif %}">
+            {%- if notes != blank -%}
+              <div>
+                <h3 class="mh-h">Notes</h3>
+                <div class="mh-notes rte">{{ notes }}</div>
+              </div>
+            {%- endif -%}
+            {%- if has_nutrition -%}
+              <div>
+                <h3 class="mh-h">Nutrition</h3>
+                <table class="mh-nutrition">
+                  {%- for line in nutrition_lines -%}
+                    {%- assign l = line | strip_newlines | strip -%}{%- assign head = l | slice: 0, 2 -%}
+                    {%- if l == blank -%}{%- continue -%}{%- endif -%}
+                    {%- assign parts = l | split: ':' -%}
+                    <tr><th scope="row">{{ parts[0] | strip | escape }}</th><td>{{ parts[1] | strip | escape }}</td></tr>
+                  {%- endfor -%}
+                </table>
+                <p class="mh-fine">Per serving. Values are estimates.</p>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </section>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ---------- SHOP THE RECIPE ---------- {%- endcomment -%}
+  {%- if recipe_products != blank -%}
+    <div class="mh-recipe__wrap mh-block mh-noprint">
+      <h2 class="mh-block__title">{{ s.products_heading | escape }}</h2>
+      <div class="mh-products">
+        {%- for product in recipe_products -%}
+          <a class="mh-product" href="{{ product.url }}">
+            <div class="mh-product__img">
+              {%- if product.featured_image -%}
+                {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(min-width: 850px) 200px, 45vw', widths: '300, 450, 600' }}
+              {%- endif -%}
+            </div>
+            <h3 class="mh-product__title">{{ product.title | escape }}</h3>
+            <span class="mh-product__price">{{ product.price | money }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ---------- APP BLOCKS (reviews etc.) ---------- {%- endcomment -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == '@app' -%}
+      <div class="mh-recipe__narrow mh-block mh-noprint" {{ block.shopify_attributes }}>{% render block %}</div>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- comment -%} ---------- MORE RECIPES ---------- {%- endcomment -%}
+  {%- if s.show_related -%}
+    {%- liquid
+      assign shown = 0
+      capture related_html
+        for a in blog.articles limit: 12
+          if a.id != article.id and shown < s.related_count
+            assign shown = shown | plus: 1
+            echo '<div>'
+            render 'article-card', blog: blog, article: a, show_image: true, media_aspect_ratio: 1.33
+            echo '</div>'
+          endif
+        endfor
+      endcapture
+    -%}
+    {%- if shown > 0 -%}
+      <div class="mh-recipe__wrap mh-block mh-noprint">
+        <h2 class="mh-block__title">{{ s.related_heading | escape }}</h2>
+        <div class="mh-related">{{ related_html }}</div>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+
+  <div class="mh-toast" data-mh-toast role="status"></div>
+</div>
+
+{%- comment -%} ---------- SEO: Recipe structured data ---------- {%- endcomment -%}
+{%- if has_recipe -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": {{ article.title | json }},
+    "author": { "@type": "Person", "name": {{ article.author | default: shop.name | json }} },
+    "datePublished": {{ article.published_at | date: '%Y-%m-%d' | json }},
+    "description": {{ article.excerpt_or_content | strip_html | strip_newlines | truncate: 300 | json }},
+    {%- if article.image %}
+    "image": [{{ article.image | image_url: width: 1200 | prepend: 'https:' | json }}],
+    {%- endif %}
+    {%- if prep > 0 %}"prepTime": "PT{{ prep }}M",{% endif %}
+    {%- if cook > 0 %}"cookTime": "PT{{ cook }}M",{% endif %}
+    {%- if total > 0 %}"totalTime": "PT{{ total }}M",{% endif %}
+    {%- if servings > 0 %}"recipeYield": "{{ servings }} servings",{% endif %}
+    {%- if article.tags.size > 0 %}"keywords": {{ article.tags | join: ', ' | json }},{% endif %}
+    "recipeIngredient": [
+      {%- assign first = true -%}
+      {%- for line in ingredients_lines -%}
+        {%- assign l = line | strip_newlines | strip -%}{%- assign head = l | slice: 0, 2 -%}
+        {%- if l == blank or head == '##' -%}{%- continue -%}{%- endif -%}
+        {%- unless first -%},{%- endunless -%}{{ l | json }}{%- assign first = false -%}
+      {%- endfor -%}
+    ],
+    "recipeInstructions": [
+      {%- assign first = true -%}
+      {%- for line in steps_lines -%}
+        {%- assign l = line | strip_newlines | strip -%}{%- assign head = l | slice: 0, 2 -%}
+        {%- if l == blank or head == '##' -%}{%- continue -%}{%- endif -%}
+        {%- unless first -%},{%- endunless -%}{ "@type": "HowToStep", "text": {{ l | json }} }{%- assign first = false -%}
+      {%- endfor -%}
+    ]
+    {%- for line in nutrition_lines -%}
+      {%- assign l = line | strip_newlines | strip | downcase -%}{%- assign head = l | slice: 0, 8 -%}
+      {%- if head == 'calories' -%}
+        {%- assign cal = l | split: ':' | last | strip -%}
+        ,"nutrition": { "@type": "NutritionInformation", "calories": {{ cal | json }} }
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  }
+  </script>
+{%- endif -%}
+
+<script>
+  (() => {
+    const root = document.querySelector('[data-mh-recipe]');
+    if (!root) return;
+    const toast = root.querySelector('[data-mh-toast]');
+    const say = (msg) => {
+      toast.textContent = msg; toast.classList.add('is-on');
+      setTimeout(() => toast.classList.remove('is-on'), 2200);
+    };
+
+    /* Print */
+    root.querySelectorAll('[data-mh-print]').forEach((b) => b.addEventListener('click', () => window.print()));
+
+    /* Share */
+    root.querySelector('[data-mh-share]')?.addEventListener('click', async (e) => {
+      const data = { title: e.currentTarget.dataset.title, url: location.href };
+      try {
+        if (navigator.share) await navigator.share(data);
+        else { await navigator.clipboard.writeText(location.href); say('Link copied'); }
+      } catch (_) {}
+    });
+
+    /* Tap a step to tick it off */
+    root.querySelectorAll('[data-mh-step]').forEach((li) =>
+      li.addEventListener('click', () => li.classList.toggle('is-done')));
+
+    /* Cook mode: bigger text + keep screen awake */
+    let lock = null;
+    const cookBtn = root.querySelector('[data-mh-cook]');
+    cookBtn?.addEventListener('click', async () => {
+      const on = cookBtn.getAttribute('aria-pressed') !== 'true';
+      cookBtn.setAttribute('aria-pressed', on);
+      root.classList.toggle('is-cook-mode', on);
+      try {
+        if (on && 'wakeLock' in navigator) lock = await navigator.wakeLock.request('screen');
+        else if (lock) { await lock.release(); lock = null; }
+      } catch (_) {}
+      if (on) say('Cook mode on — screen will stay awake');
+    });
+
+    /* Serving scaler */
+    const base = parseFloat(root.dataset.baseServings) || 0;
+    const out = root.querySelector('[data-mh-servings]');
+    if (!base || !out) return;
+    let current = base;
+
+    const FRAC = { '¼': .25, '½': .5, '¾': .75, '⅓': 1 / 3, '⅔': 2 / 3, '⅛': .125 };
+    const RE = /^(\d+\s+\d+\/\d+|\d+\/\d+|\d*\.?\d+|[¼½¾⅓⅔⅛])(\s*(?:-|–|to)\s*(\d+\s+\d+\/\d+|\d+\/\d+|\d*\.?\d+|[¼½¾⅓⅔⅛]))?/;
+    const parse = (t) => {
+      t = t.trim();
+      if (FRAC[t] != null) return FRAC[t];
+      const mixed = t.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+      if (mixed) return +mixed[1] + mixed[2] / mixed[3];
+      const f = t.match(/^(\d+)\/(\d+)$/);
+      if (f) return f[1] / f[2];
+      return parseFloat(t);
+    };
+    const fmt = (n) => {
+      const whole = Math.floor(n + 1e-9), rem = n - whole;
+      const steps = [[0, ''], [.125, '⅛'], [.25, '¼'], [1 / 3, '⅓'], [.5, '½'], [2 / 3, '⅔'], [.75, '¾'], [1, '']];
+      let best = steps[0], diff = 9;
+      steps.forEach((s) => { const d = Math.abs(rem - s[0]); if (d < diff) { diff = d; best = s; } });
+      let w = whole + (best[0] === 1 ? 1 : 0);
+      if (diff > .04 && n >= 10) return String(Math.round(n));
+      if (diff > .04) return String(Math.round(n * 100) / 100);
+      return (w ? w : '') + best[1] || '0';
+    };
+
+    const items = [...root.querySelectorAll('[data-mh-ing]')].map((el) => {
+      const text = el.textContent, m = text.match(RE);
+      if (!m) return null;
+      return { el, rest: text.slice(m[0].length), a: parse(m[1]), b: m[3] ? parse(m[3]) : null };
+    }).filter(Boolean);
+
+    const render = () => {
+      const k = current / base;
+      items.forEach((i) => {
+        const q = fmt(i.a * k) + (i.b != null ? '–' + fmt(i.b * k) : '');
+        i.el.textContent = q + i.rest;
+      });
+      out.textContent = current;
+    };
+    root.querySelector('[data-mh-minus]').addEventListener('click', () => { current = Math.max(1, current - 1); render(); });
+    root.querySelector('[data-mh-plus]').addEventListener('click', () => { current += 1; render(); });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Recipe article",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    { "type": "header", "content": "Layout" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#b5331f" },
+    { "type": "range", "id": "corner_radius", "label": "Corner radius", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 8 },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 60 },
+
+    { "type": "header", "content": "Header" },
+    { "type": "checkbox", "id": "show_image", "label": "Show featured image", "default": true },
+    { "type": "checkbox", "id": "show_author", "label": "Show author", "default": true },
+    { "type": "checkbox", "id": "show_date", "label": "Show date", "default": true },
+    { "type": "checkbox", "id": "show_story", "label": "Show article text above the recipe card", "default": true },
+
+    { "type": "header", "content": "Shop the recipe" },
+    { "type": "text", "id": "products_heading", "label": "Heading", "default": "Shop this recipe" },
+
+    { "type": "header", "content": "More recipes" },
+    { "type": "checkbox", "id": "show_related", "label": "Show more recipes", "default": true },
+    { "type": "text", "id": "related_heading", "label": "Heading", "default": "More recipes you'll love" },
+    { "type": "range", "id": "related_count", "label": "Number of recipes", "min": 2, "max": 8, "step": 1, "default": 4 }
+  ],
+  "blocks": [
+    { "type": "@app" }
+  ]
+}
+{% endschema %}

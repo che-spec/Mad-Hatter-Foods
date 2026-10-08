@@ -1,0 +1,1649 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section",
+      "settings": {
+        "section_width": "full-width",
+        "section_height": "large",
+        "section_height_mobile": "large",
+        "color_scheme": "scheme-9",
+        "background_media": "image",
+        "toggle_overlay": true,
+        "overlay_color": "rgba(0,0,0,0.45)",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 18
+      },
+      "blocks": {
+        "text_st1": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h1>GET SOME CRACK</h1>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "10.0rem",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_st2": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Green Chile Crack Sauce — label by @kujorock</p>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "2.0rem"
+          },
+          "blocks": {}
+        },
+        "button_st3": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Green Chile Crack Sauce",
+            "link": "/products/green-chile-crack-sauce",
+            "buttons_padding_vertical": 16,
+            "buttons_padding_horizontal": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st1",
+        "text_st2",
+        "button_st3"
+      ]
+    },
+    "build_box": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "content_direction": "row",
+        "content_direction_mobile": "column",
+        "vertical_alignment": "center",
+        "gap": 56,
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "group_st8": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "gap": 16
+          },
+          "blocks": {
+            "text_st4": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>UNIQUE HOT SAUCES</strong></p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph",
+                "case": "uppercase",
+                "color": "var(--color-primary)"
+              },
+              "blocks": {}
+            },
+            "text_st5": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>Build Your Own Sauce Box</h2>",
+                "underline_offset": -20,
+                "type_preset": "h2",
+                "case": "uppercase"
+              },
+              "blocks": {}
+            },
+            "text_st6": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Small-batch, artist-collab flavors like Asian Hickory BBQ, Spicy Soy, and Oregon Seaweed Chili Crisp. Made in the Northwest — Portland, Oregon specifically.</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "button_st7": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Build Your Sauce Box",
+                "link": "/pages/build-a-box"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_st4",
+            "text_st5",
+            "text_st6",
+            "button_st7"
+          ]
+        },
+        "group_sta": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "image_st9": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image_ratio": "square",
+                "border_radius": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_st9"
+          ]
+        }
+      },
+      "block_order": [
+        "group_st8",
+        "group_sta"
+      ]
+    },
+    "awards": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_stb": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Award Winning Sauces</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_stc": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>HAB Sauce brings home hardware. 🏆 With 50+ awards for its bold, small-batch sauces, HAB was crowned the #1 World's Best Small-Batch Hot Sauce Company by Old Boney Mountain in 2025.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "product_grid_std": {
+          "type": "product-grid",
+          "name": "Product grid",
+          "settings": {
+            "width": "fill",
+            "width_tablet": "fill",
+            "width_mobile": "fill",
+            "collection": "award-winners",
+            "columns_desktop": 4,
+            "columns_desktop_carousel": 4,
+            "product_grid_type": "carousel",
+            "columns_gap": 20,
+            "rows_gap": 32,
+            "navigation": "arrows",
+            "pagination_type": "progressbar",
+            "progressbar_left": 0,
+            "progressbar_right": 0,
+            "products_to_show": 8
+          },
+          "blocks": {
+            "product-slide-item": {
+              "type": "card-product-flex",
+              "static": true,
+              "settings": {
+                "product": "{{ closest.product }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "card_product_media_flex_aXnwFU": {
+                  "type": "_card-product-media-flex",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "custom_width": 80
+                  },
+                  "blocks": {}
+                },
+                "card_product_information_4wqAip": {
+                  "type": "_card-product-information",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_alignment": "flex-start",
+                    "horizontal_alignment": "space-between",
+                    "gap_y": 0
+                  },
+                  "blocks": {
+                    "card_product_title_flex_HgegiY": {
+                      "type": "_card-product-title-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "width": "custom",
+                        "custom_width": 70,
+                        "type_preset": "custom",
+                        "font_size": "2.0rem",
+                        "padding-inline-end": 24,
+                        "padding-inline-start": 24
+                      },
+                      "blocks": {}
+                    },
+                    "card_product_price_flex_jkR6DL": {
+                      "type": "_card-product-price-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "type_preset": "custom",
+                        "font_size": "1.8rem",
+                        "padding-inline-start": 24,
+                        "padding-inline-end": 24
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "card_product_title_flex_HgegiY",
+                    "card_product_price_flex_jkR6DL"
+                  ]
+                }
+              },
+              "block_order": [
+                "card_product_media_flex_aXnwFU",
+                "card_product_information_4wqAip"
+              ]
+            }
+          },
+          "block_order": []
+        },
+        "button_ste": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View all",
+            "link": "/collections/award-winners",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_stb",
+        "text_stc",
+        "product_grid_std",
+        "button_ste"
+      ]
+    },
+    "reviews": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_stz": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Let customers speak for us</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_st10": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>from 176 reviews</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "testimonial_st11": {
+          "type": "testimonial",
+          "settings": {
+            "content_direction": "row",
+            "gap": 24,
+            "columns_carousel": 3,
+            "mobile_columns_carousel": "1.3",
+            "loop": false,
+            "navigation": "arrows",
+            "arrows_position": "bottom",
+            "shadow_color": "rgba(0,0,0,0)",
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {
+            "testimonial_item_stf": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_stg": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#d6281f"
+                  },
+                  "blocks": {}
+                },
+                "text_sth": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“It has a well balanced medium between the sweet, rich cocoa, and heat…”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_sti": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>William</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stg",
+                "text_sth",
+                "text_sti"
+              ]
+            },
+            "testimonial_item_stj": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_stk": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#d6281f"
+                  },
+                  "blocks": {}
+                },
+                "text_stl": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“Incredible flavor, killer quality, and stellar customer service/shipping…”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stm": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>Justin</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stk",
+                "text_stl",
+                "text_stm"
+              ]
+            },
+            "testimonial_item_stn": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_sto": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#d6281f"
+                  },
+                  "blocks": {}
+                },
+                "text_stp": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“The ultimate dill pickle hot sauce (if your coworkers don't steal it…)”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stq": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>Justin</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_sto",
+                "text_stp",
+                "text_stq"
+              ]
+            },
+            "testimonial_item_str": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_sts": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#d6281f"
+                  },
+                  "blocks": {}
+                },
+                "text_stt": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“I LOVE this smoked hot sauce!!”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stu": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>Kelli</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_sts",
+                "text_stt",
+                "text_stu"
+              ]
+            },
+            "testimonial_item_stv": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_stw": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#d6281f"
+                  },
+                  "blocks": {}
+                },
+                "text_stx": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“One of the GOAT verde sauces!!! I can't even count how many bottles…”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_sty": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>Guy</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_stw",
+                "text_stx",
+                "text_sty"
+              ]
+            }
+          },
+          "block_order": [
+            "testimonial_item_stf",
+            "testimonial_item_stj",
+            "testimonial_item_stn",
+            "testimonial_item_str",
+            "testimonial_item_stv"
+          ]
+        }
+      },
+      "block_order": [
+        "text_stz",
+        "text_st10",
+        "testimonial_st11"
+      ]
+    },
+    "crisps": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st12": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Chili Crisps</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_st13": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Discover HAB Sauce Chili Crisps — small batch, bold, and flavorful. Perfect for rice, noodles, veggies & more. Vegan, gluten-free, and packed with heat.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "product_grid_st14": {
+          "type": "product-grid",
+          "name": "Product grid",
+          "settings": {
+            "width": "fill",
+            "width_tablet": "fill",
+            "width_mobile": "fill",
+            "collection": "chili-crisps",
+            "columns_desktop": 3,
+            "columns_desktop_carousel": 3,
+            "product_grid_type": "grid",
+            "columns_gap": 20,
+            "rows_gap": 32,
+            "navigation": "none",
+            "pagination_type": "progressbar",
+            "progressbar_left": 0,
+            "progressbar_right": 0,
+            "products_to_show": 8
+          },
+          "blocks": {
+            "product-slide-item": {
+              "type": "card-product-flex",
+              "static": true,
+              "settings": {
+                "product": "{{ closest.product }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "card_product_media_flex_aXnwFU": {
+                  "type": "_card-product-media-flex",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "custom_width": 80
+                  },
+                  "blocks": {}
+                },
+                "card_product_information_4wqAip": {
+                  "type": "_card-product-information",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_alignment": "flex-start",
+                    "horizontal_alignment": "space-between",
+                    "gap_y": 0
+                  },
+                  "blocks": {
+                    "card_product_title_flex_HgegiY": {
+                      "type": "_card-product-title-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "width": "custom",
+                        "custom_width": 70,
+                        "type_preset": "custom",
+                        "font_size": "2.0rem",
+                        "padding-inline-end": 24,
+                        "padding-inline-start": 24
+                      },
+                      "blocks": {}
+                    },
+                    "card_product_price_flex_jkR6DL": {
+                      "type": "_card-product-price-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "type_preset": "custom",
+                        "font_size": "1.8rem",
+                        "padding-inline-start": 24,
+                        "padding-inline-end": 24
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "card_product_title_flex_HgegiY",
+                    "card_product_price_flex_jkR6DL"
+                  ]
+                }
+              },
+              "block_order": [
+                "card_product_media_flex_aXnwFU",
+                "card_product_information_4wqAip"
+              ]
+            }
+          },
+          "block_order": []
+        },
+        "button_st15": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View all",
+            "link": "/collections/chili-crisps",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st12",
+        "text_st13",
+        "product_grid_st14",
+        "button_st15"
+      ]
+    },
+    "blog_header": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 0
+      },
+      "blocks": {
+        "text_st16": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>From the Lab</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st16"
+      ]
+    },
+    "blog": {
+      "type": "blog-posts",
+      "blocks": {
+        "static-header": {
+          "type": "_blog-post-header",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "content_direction_mobile": "column",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_NqhTPE": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Blog posts</h2>",
+                "typing_text": false,
+                "primary_text": "Welcome to our store!",
+                "secondary_text": "Exclusive offers just for you.",
+                "third_text": "Shop now and enjoy deals!",
+                "highlight_text": false,
+                "highlight_text_content": "",
+                "highlight_text_color": "#000000",
+                "spacing_text": false,
+                "spacing_text_content": "",
+                "spacing_text_left": 0,
+                "spacing_text_right": 0,
+                "stroke_text": false,
+                "stroke_text_content": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "inherit_text_alignment": true,
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1.6rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "enable_border": false,
+                "enable_border_bottom": false,
+                "border": "none",
+                "border_width": 0,
+                "border_width_type": "100%",
+                "border_custom_width": 100,
+                "border_radius": 0,
+                "text_effect": "none",
+                "animation_repeat": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_NqhTPE"
+          ]
+        },
+        "static-blog-post-block": {
+          "type": "_blog-post-block",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "content_direction_mobile": "column",
+            "horizontal_alignment": "flex-start",
+            "horizontal_alignment_mobile": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "border": "none",
+            "border_width": 1,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_article_title_flex_HL7iKe": {
+              "type": "_card-article-title-flex",
+              "name": "Article title",
+              "settings": {
+                "article": "{{ closest.article }}",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2.0rem",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "padding-block-start": 0,
+                "padding-inline-end": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0
+              },
+              "blocks": {}
+            },
+            "card_article_description_flex_yNFhGx": {
+              "type": "_card-article-description-flex",
+              "name": "Article description",
+              "settings": {
+                "article": "{{ closest.article }}",
+                "truncatewords": 30,
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.6rem",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "padding-block-start": 0,
+                "padding-inline-end": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0
+              },
+              "blocks": {}
+            },
+            "group-media": {
+              "type": "_card-article-group-media",
+              "static": true,
+              "settings": {
+                "article": "{{ closest.article }}"
+              },
+              "blocks": {
+                "image": {
+                  "type": "_blog-post-image",
+                  "static": true,
+                  "settings": {
+                    "image_ratio": "adapt",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_radius": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            }
+          },
+          "block_order": [
+            "card_article_title_flex_HL7iKe",
+            "card_article_description_flex_yNFhGx"
+          ]
+        }
+      },
+      "settings": {
+        "blog": "news",
+        "section_width": "page-width",
+        "page_width_custom": 1570,
+        "section_height": "custom",
+        "section_height_custom": 28,
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "articles_to_show": 2,
+        "columns_grid": 2,
+        "columns_carousel": 4,
+        "mobile_columns_grid": "2",
+        "tablet_columns_carousel": 3,
+        "mobile_columns_carousel": 2,
+        "loop": false,
+        "navigation": "arrows",
+        "show_on_header": false,
+        "pagination_type": "bullets",
+        "content_direction": "column",
+        "content_direction_mobile": "column",
+        "header_width": 40,
+        "horizontal_alignment": "flex-start",
+        "horizontal_alignment_mobile": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "blocks_gap": 30,
+        "items_gap": 30,
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 50,
+        "padding-block-end": 50,
+        "padding-inline-start": 0,
+        "padding-inline-end": 0,
+        "color_scheme": "scheme-2"
+      }
+    },
+    "blog_cta": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 24,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "button_st17": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View all",
+            "link": "/blogs/news",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "button_st17"
+      ]
+    },
+    "why": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st18": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Why choose HAB Sauce?</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_st19": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Out of all of the hot sauce brands out there, this is why we believe you should trust HAB Sauce with your food…</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "group_st1u": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 28,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_st1d": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1a": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1b": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Flavor Comes First. Always.</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_st1c": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We don't believe great sauce is about overwhelming heat, it's about creating bold, unforgettable flavors. Every recipe is crafted to complement your food.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1a",
+                "text_st1b",
+                "text_st1c"
+              ]
+            },
+            "group_st1h": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1e": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1f": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Crafted in Small Batches</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_st1g": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Made in Oregon with premium ingredients and carefully developed recipes — the kind of care that earns 50+ awards.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1e",
+                "text_st1f",
+                "text_st1g"
+              ]
+            },
+            "group_st1l": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1i": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1j": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Artist Collaborations</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_st1k": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We partner with underground artists and musicians to create limited-edition sauces from the ground up.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1i",
+                "text_st1j",
+                "text_st1k"
+              ]
+            },
+            "group_st1p": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1m": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1n": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Unexpected Ingredients</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_st1o": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>From Oregon Raspberry Scotch Bonnet Pepper Jam to savory seaweed chili crisp — bold, Asian-inspired flavors you won't find anywhere else.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1m",
+                "text_st1n",
+                "text_st1o"
+              ]
+            },
+            "group_st1t": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1q": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1r": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Made to Be Used on Everything</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_st1s": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Chicken, steak, wings, burgers, pizza, eggs, ramen, rice. If it needs more flavor, it probably needs HAB Sauce.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1q",
+                "text_st1r",
+                "text_st1s"
+              ]
+            }
+          },
+          "block_order": [
+            "group_st1d",
+            "group_st1h",
+            "group_st1l",
+            "group_st1p",
+            "group_st1t"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st18",
+        "text_st19",
+        "group_st1u"
+      ]
+    },
+    "faq": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 24,
+        "padding-block-start": 72,
+        "padding-block-end": 72,
+        "horizontal_alignment_flex_direction_column": "center"
+      },
+      "blocks": {
+        "text_st29": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Frequently Asked Sauce Questions (FAQs)</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "group_st2b": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 80,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "accordion_st2a": {
+              "type": "accordion",
+              "settings": {
+                "dividers": true
+              },
+              "blocks": {
+                "accordion_row_st1v": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Where is HAB Sauce made?",
+                    "open_by_default": true
+                  },
+                  "blocks": {
+                    "text_st1w": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>HAB Sauce is handcrafted in small batches in Portland, Oregon.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st1w"
+                  ]
+                },
+                "accordion_row_st1x": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Are HAB Sauces vegan and gluten-free?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st1y": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Most are. Check each product description for details.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st1y"
+                  ]
+                },
+                "accordion_row_st1z": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How long does shipping take?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st20": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Orders process in 1–2 business days, with 3–5 business days for standard U.S. shipping.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st20"
+                  ]
+                },
+                "accordion_row_st21": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How hot are your sauces?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st22": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Our range runs from mild to extremely hot, and every product shows a heat level indicator.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st22"
+                  ]
+                },
+                "accordion_row_st23": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Do you offer gift sets?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st24": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Yes — curated 4-packs, 2 oz samplers, and limited-edition bundles.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st24"
+                  ]
+                },
+                "accordion_row_st25": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Do you ship internationally?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st26": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>We currently ship within the U.S. only. Contact us for international requests.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st26"
+                  ]
+                },
+                "accordion_row_st27": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I build my own 4-pack?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st28": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Yes! Use our Build Your Own 4-Pack feature.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st28"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_st1v",
+                "accordion_row_st1x",
+                "accordion_row_st1z",
+                "accordion_row_st21",
+                "accordion_row_st23",
+                "accordion_row_st25",
+                "accordion_row_st27"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_st2a"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st29",
+        "group_st2b"
+      ]
+    },
+    "newsletter": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "gap": 14,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 88,
+        "padding-block-end": 88
+      },
+      "blocks": {
+        "text_st2c": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><strong>SIGN UP TO HAVE EARLY ACCESS TO ORDER THE NEWEST DROPS</strong></p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center",
+            "color": "var(--color-primary)"
+          },
+          "blocks": {}
+        },
+        "text_st2d": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Sign up for Sauce Drops</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        },
+        "text_st2e": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Be the first to know about new sauce drops, events, exclusive deals, and insider news.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "email_signup_st2f": {
+          "type": "email-signup",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st2c",
+        "text_st2d",
+        "text_st2e",
+        "email_signup_st2f"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "build_box",
+    "awards",
+    "reviews",
+    "crisps",
+    "blog_header",
+    "blog",
+    "blog_cta",
+    "why",
+    "faq",
+    "newsletter"
+  ]
+}

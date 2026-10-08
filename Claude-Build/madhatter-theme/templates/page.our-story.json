@@ -1,0 +1,983 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section",
+      "settings": {
+        "section_width": "full-width",
+        "section_height": "large",
+        "section_height_mobile": "large",
+        "color_scheme": "scheme-9",
+        "background_media": "image",
+        "toggle_overlay": true,
+        "overlay_color": "rgba(20,24,10,0.55)",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 20
+      },
+      "blocks": {
+        "text_st1": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h1>From Our Farm to Your Kitchen</h1>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "6.0rem"
+          },
+          "blocks": {}
+        },
+        "text_st2": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>How a simple question — “what if hot sauce was made with EVOO instead of vinegar?” — changed everything.</p>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "custom",
+            "alignment": "center",
+            "font_size": "2.2rem",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st1",
+        "text_st2"
+      ]
+    },
+    "origin": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "content_direction": "row",
+        "content_direction_mobile": "column",
+        "vertical_alignment": "center",
+        "gap": 56,
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "group_st8": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "gap": 16
+          },
+          "blocks": {
+            "text_st3": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>It Started With Frustration</h2>",
+                "underline_offset": -20,
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            },
+            "text_st4": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>I was tired of hot sauces that only added heat. I wanted something that added complexity, that could work as more than just a finishing drizzle. Something built on quality ingredients that respected the food instead of just burning through it.</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "text_st5": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>So I asked a simple question: what if we started with extra virgin olive oil instead of vinegar?</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "text_st6": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>That question became an obsession. Hundreds of batches later, Mad Hatter was born — a hot sauce that works as a marinade, cooking oil, and finishing touch. Something that replaces three bottles in your kitchen with one.</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "text_st7": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><em>— [Founder Name], Founder</em></p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_st3",
+            "text_st4",
+            "text_st5",
+            "text_st6",
+            "text_st7"
+          ]
+        },
+        "group_sta": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 45,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "image_st9": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image_ratio": "portrait",
+                "border_radius": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_st9"
+          ]
+        }
+      },
+      "block_order": [
+        "group_st8",
+        "group_sta"
+      ]
+    },
+    "difference": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_stb": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>What Makes Mad Hatter Different</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "group_str": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 40,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_stg": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_stc": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "bottle",
+                    "width": 56
+                  },
+                  "blocks": {}
+                },
+                "text_std": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>The Base</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_ste": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>First-Press Extra Virgin Olive Oil</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stf": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Most hot sauces use vinegar or water as a base. We use premium EVOO, which means Mad Hatter works at high temperatures, penetrates marinades deeper, and adds richness instead of just acid.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_stc",
+                "text_std",
+                "text_ste",
+                "text_stf"
+              ]
+            },
+            "group_stl": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_sth": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "pepper",
+                    "width": 56
+                  },
+                  "blocks": {}
+                },
+                "text_sti": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>The Peppers</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_stj": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Organic Habaneros From Our Virginia Farm</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stk": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We grow our own organic habanero peppers on our farm in Virginia. This gives us complete control over quality and allows us to harvest at peak flavor — not just peak heat.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_sth",
+                "text_sti",
+                "text_stj",
+                "text_stk"
+              ]
+            },
+            "group_stq": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_stm": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "check_mark",
+                    "width": 56
+                  },
+                  "blocks": {}
+                },
+                "text_stn": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>The Philosophy</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "case": "uppercase"
+                  },
+                  "blocks": {}
+                },
+                "text_sto": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Versatility Over Gimmicks</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stp": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We're not trying to create the world's hottest sauce. We're creating the world's most useful sauce. One that home cooks actually reach for every day, not just on taco Tuesday.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_stm",
+                "text_stn",
+                "text_sto",
+                "text_stp"
+              ]
+            }
+          },
+          "block_order": [
+            "group_stg",
+            "group_stl",
+            "group_stq"
+          ]
+        }
+      },
+      "block_order": [
+        "text_stb",
+        "group_str"
+      ]
+    },
+    "values": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_sts": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>What We Stand For</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "group_st19": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 32,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_stw": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_stt": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "leaf",
+                    "width": 48
+                  },
+                  "blocks": {}
+                },
+                "text_stu": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Quality Ingredients</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stv": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>No fillers, no artificial colors, no preservatives. If you can't pronounce it, it's not in our bottles.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_stt",
+                "text_stu",
+                "text_stv"
+              ]
+            },
+            "group_st10": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_stx": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "plant",
+                    "width": 48
+                  },
+                  "blocks": {}
+                },
+                "text_sty": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Sustainable Farming</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stz": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Our peppers are grown using organic practices that respect the land and our community.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_stx",
+                "text_sty",
+                "text_stz"
+              ]
+            },
+            "group_st14": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_st11": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "serving_dish",
+                    "width": 48
+                  },
+                  "blocks": {}
+                },
+                "text_st12": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Kitchen Efficiency</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st13": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We believe cooking should be easier, not harder. One versatile tool beats a cabinet full of single-use condiments.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_st11",
+                "text_st12",
+                "text_st13"
+              ]
+            },
+            "group_st18": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "icon_st15": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "heart",
+                    "width": 48
+                  },
+                  "blocks": {}
+                },
+                "text_st16": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Community First</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st17": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We're not just selling sauce — we're building a community of home cooks who believe in real ingredients and real food.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_st15",
+                "text_st16",
+                "text_st17"
+              ]
+            }
+          },
+          "block_order": [
+            "group_stw",
+            "group_st10",
+            "group_st14",
+            "group_st18"
+          ]
+        }
+      },
+      "block_order": [
+        "text_sts",
+        "group_st19"
+      ]
+    },
+    "process": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st1a": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>How We Make It</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "group_st1r": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 28,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_st1e": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1b": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image_ratio": "square",
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1c": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>1. Grow</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1d": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Our organic habanero peppers are grown on our Virginia farm without synthetic pesticides or fertilizers.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1b",
+                "text_st1c",
+                "text_st1d"
+              ]
+            },
+            "group_st1i": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1f": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image_ratio": "square",
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1g": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>2. Harvest</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1h": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We harvest by hand at peak ripeness — when flavor is at its maximum, not just heat.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1f",
+                "text_st1g",
+                "text_st1h"
+              ]
+            },
+            "group_st1m": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1j": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image_ratio": "square",
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1k": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>3. Craft</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1l": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Small-batch production means we control every aspect, from blending to bottling.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1j",
+                "text_st1k",
+                "text_st1l"
+              ]
+            },
+            "group_st1q": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 22,
+                "width_tablet": "custom",
+                "custom_width_tablet": 45,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1n": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image_ratio": "square",
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1o": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>4. Share</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1p": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Every bottle is inspected, labeled, and shipped with care from our facility to your kitchen.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1n",
+                "text_st1o",
+                "text_st1p"
+              ]
+            }
+          },
+          "block_order": [
+            "group_st1e",
+            "group_st1i",
+            "group_st1m",
+            "group_st1q"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st1a",
+        "group_st1r"
+      ]
+    },
+    "cta": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "gap": 20,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 88,
+        "padding-block-end": 88
+      },
+      "blocks": {
+        "text_st1s": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Taste the Difference</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_st1t": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Quality ingredients. Small-batch care. Infinite versatility. Experience what 2,000+ home cooks already know.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "button_st1u": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Now",
+            "link": "/collections/all",
+            "buttons_padding_vertical": 16,
+            "buttons_padding_horizontal": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st1s",
+        "text_st1t",
+        "button_st1u"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "origin",
+    "difference",
+    "values",
+    "process",
+    "cta"
+  ]
+}

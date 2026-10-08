@@ -1,0 +1,3 @@
+const fs=require('fs');const T=process.argv[2];
+function show(b,k,d){const s=b.settings||{};const keys=Object.entries(s).filter(([a,v])=>typeof v==='string'&&v&&!/^(rgba?|#)/.test(v)&&v.length<200&&/text|label|link|menu|title|heading|content|image|handle/i.test(a)).map(([a,v])=>a+'='+v.replace(/\n/g,' ').slice(0,80));console.log(' '.repeat(d)+k+':'+b.type+' '+keys.join(' | '));for(const [c,cb] of Object.entries(b.blocks||{}))show(cb,c,d+2)}
+for(const f of ['footer-group','header-group']){const j=JSON.parse(fs.readFileSync(T+'/sections/'+f+'.json','utf8'));console.log('=====',f);for(const [k,s] of Object.entries(j.sections)){if(f==='header-group'&&k.startsWith('header_'))continue;show(s,k,0)}}

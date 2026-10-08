@@ -1,0 +1,1914 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section",
+      "settings": {
+        "section_width": "full-width",
+        "section_height": "large",
+        "section_height_mobile": "large",
+        "color_scheme": "scheme-9",
+        "background_media": "image",
+        "toggle_overlay": true,
+        "overlay_color": "rgba(20,24,10,0.55)",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 18
+      },
+      "blocks": {
+        "text_st1": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h1>Heighten your Hotness: Your Kitchen's Secret Weapon</h1>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "6.0rem"
+          },
+          "blocks": {}
+        },
+        "text_st2": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>The one bottle that replaces three: marinade, finishing oil, and cooking sauce</p>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "2.0rem"
+          },
+          "blocks": {}
+        },
+        "group_st5": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "horizontal_alignment": "center",
+            "gap": 16,
+            "wrap": "wrap"
+          },
+          "blocks": {
+            "button_st3": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Discover the Difference",
+                "link": "/collections/all"
+              },
+              "blocks": {}
+            },
+            "button_st4": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "See Recipe Ideas",
+                "link": "/blogs/recipes",
+                "style_class": "button-secondary"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_st3",
+            "button_st4"
+          ]
+        },
+        "group_st9": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "horizontal_alignment": "center",
+            "gap": 32,
+            "wrap": "wrap",
+            "padding-block-start": 20
+          },
+          "blocks": {
+            "text_st6": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>✓ Made with First-Press EVOO</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "text_st7": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>✓ Organic Habaneros</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "text_st8": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>✓ Virginia Small Batch Crafted</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_st6",
+            "text_st7",
+            "text_st8"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st1",
+        "text_st2",
+        "group_st5",
+        "group_st9"
+      ]
+    },
+    "build_pack": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "content_direction": "row",
+        "content_direction_mobile": "column",
+        "vertical_alignment": "center",
+        "gap": 56,
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "group_ste": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill",
+            "gap": 16
+          },
+          "blocks": {
+            "text_sta": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>BUNDLES &amp; PACKS</strong></p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph",
+                "case": "uppercase",
+                "color": "var(--color-primary)"
+              },
+              "blocks": {}
+            },
+            "text_stb": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>Stock the Kitchen, Save $7</h2>",
+                "underline_offset": -20,
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            },
+            "text_stc": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Pick your heat — Mild, Medium, or Hot — and grab the Meal Prep Pack. Three bottles, one price, and a pantry that's ready for marinades, weeknight stir-fries, and dinner parties.</p>",
+                "underline_offset": -20,
+                "type_preset": "paragraph"
+              },
+              "blocks": {}
+            },
+            "button_std": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Shop Bundles & Save",
+                "link": "/collections/bundles"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_sta",
+            "text_stb",
+            "text_stc",
+            "button_std"
+          ]
+        },
+        "group_stg": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "image_stf": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image_ratio": "square",
+                "border_radius": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_stf"
+          ]
+        }
+      },
+      "block_order": [
+        "group_ste",
+        "group_stg"
+      ]
+    },
+    "value_prop": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_sth": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>The Super Condiment That Replaces 3 Bottles</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "group_str": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 40,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_stk": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "text_sti": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Marinade Base</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stj": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>For meal prep overnight magic. Transform plain proteins into restaurant-quality meals with depth and complexity.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_sti",
+                "text_stj"
+              ]
+            },
+            "group_stn": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "text_stl": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Cooking Sauce</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stm": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Stir-fry starter for 20-minute dinners. Add dimension to vegetables, proteins, and grains with one versatile ingredient.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_stl",
+                "text_stm"
+              ]
+            },
+            "group_stq": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "text_sto": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Finishing Oil</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_stp": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>The final flourish for restaurant quality. Elevate any dish with a drizzle that brings heat, richness, and sophistication.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_sto",
+                "text_stp"
+              ]
+            }
+          },
+          "block_order": [
+            "group_stk",
+            "group_stn",
+            "group_stq"
+          ]
+        },
+        "text_sts": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><strong>One bottle. Heightened possibilities.</strong> Mad Hatter ($24) vs. buying all 3 separately ($45+)</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_sth",
+        "group_str",
+        "text_sts"
+      ]
+    },
+    "bestsellers": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_stt": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Find Your Perfect Match</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_stu": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Mild, Medium, or Hot — all built on first-press extra virgin olive oil and organic habaneros.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "product_grid_stv": {
+          "type": "product-grid",
+          "name": "Product grid",
+          "settings": {
+            "width": "fill",
+            "width_tablet": "fill",
+            "width_mobile": "fill",
+            "collection": "all",
+            "columns_desktop": 4,
+            "columns_desktop_carousel": 4,
+            "product_grid_type": "carousel",
+            "columns_gap": 20,
+            "rows_gap": 32,
+            "navigation": "arrows",
+            "pagination_type": "progressbar",
+            "progressbar_left": 0,
+            "progressbar_right": 0,
+            "products_to_show": 8
+          },
+          "blocks": {
+            "product-slide-item": {
+              "type": "card-product-flex",
+              "static": true,
+              "settings": {
+                "product": "{{ closest.product }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "card_product_media_flex_aXnwFU": {
+                  "type": "_card-product-media-flex",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "custom_width": 80
+                  },
+                  "blocks": {}
+                },
+                "card_product_information_4wqAip": {
+                  "type": "_card-product-information",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_alignment": "flex-start",
+                    "horizontal_alignment": "space-between",
+                    "gap_y": 0
+                  },
+                  "blocks": {
+                    "card_product_title_flex_HgegiY": {
+                      "type": "_card-product-title-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "width": "custom",
+                        "custom_width": 70,
+                        "type_preset": "custom",
+                        "font_size": "2.0rem",
+                        "padding-inline-end": 24,
+                        "padding-inline-start": 24
+                      },
+                      "blocks": {}
+                    },
+                    "card_product_price_flex_jkR6DL": {
+                      "type": "_card-product-price-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "type_preset": "custom",
+                        "font_size": "1.8rem",
+                        "padding-inline-start": 24,
+                        "padding-inline-end": 24
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "card_product_title_flex_HgegiY",
+                    "card_product_price_flex_jkR6DL"
+                  ]
+                }
+              },
+              "block_order": [
+                "card_product_media_flex_aXnwFU",
+                "card_product_information_4wqAip"
+              ]
+            }
+          },
+          "block_order": []
+        },
+        "button_stw": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop All",
+            "link": "/collections/all",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_stt",
+        "text_stu",
+        "product_grid_stv",
+        "button_stw"
+      ]
+    },
+    "reviews": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st1d": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Trusted by Culinary Curators since 2012.</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "testimonial_st1e": {
+          "type": "testimonial",
+          "settings": {
+            "content_direction": "row",
+            "gap": 24,
+            "columns_carousel": 4,
+            "mobile_columns_carousel": "1.3",
+            "loop": false,
+            "navigation": "arrows",
+            "arrows_position": "bottom",
+            "shadow_color": "rgba(0,0,0,0)",
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {
+            "testimonial_item_stx": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_sty": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#f2a33a"
+                  },
+                  "blocks": {}
+                },
+                "text_stz": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“This replaced my olive oil, hot sauce, AND marinade. My meal prep game completely changed.”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st10": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>— Sarah, 34, Mom of 2</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_sty",
+                "text_stz",
+                "text_st10"
+              ]
+            },
+            "testimonial_item_st11": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_st12": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#f2a33a"
+                  },
+                  "blocks": {}
+                },
+                "text_st13": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“We use it for everything from weeknight stir-fries to finishing our dinner party dishes. It's become our kitchen essential.”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st14": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>— Marcus & James, 36, Food Bloggers</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_st12",
+                "text_st13",
+                "text_st14"
+              ]
+            },
+            "testimonial_item_st15": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_st16": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#f2a33a"
+                  },
+                  "blocks": {}
+                },
+                "text_st17": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“Finally, a condiment that keeps up with my schedule. Quality ingredients, maximum versatility.”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st18": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>— Linda, 41, Dinner Party Host</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_st16",
+                "text_st17",
+                "text_st18"
+              ]
+            },
+            "testimonial_item_st19": {
+              "type": "_testimonial-item",
+              "settings": {
+                "horizontal_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
+                "shadow_color": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rating_st1a": {
+                  "type": "rating",
+                  "name": "Rating",
+                  "settings": {
+                    "rating": 5,
+                    "gap": 4,
+                    "rated_color": "#f2a33a"
+                  },
+                  "blocks": {}
+                },
+                "text_st1b": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>“Started with the 'better than Sriracha' promise, stayed for the incredible depth of flavor. Now I use it on everything.”</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                },
+                "text_st1c": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>— Trevor, 29</strong></p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rating_st1a",
+                "text_st1b",
+                "text_st1c"
+              ]
+            }
+          },
+          "block_order": [
+            "testimonial_item_stx",
+            "testimonial_item_st11",
+            "testimonial_item_st15",
+            "testimonial_item_st19"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st1d",
+        "testimonial_st1e"
+      ]
+    },
+    "bundles": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 28,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st1f": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Bundles & Gift Sets</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_st1g": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Save more with a pack, or send the gift that cooks. Gift Sets include 3 bottles and recipe cards.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "product_grid_st1h": {
+          "type": "product-grid",
+          "name": "Product grid",
+          "settings": {
+            "width": "fill",
+            "width_tablet": "fill",
+            "width_mobile": "fill",
+            "collection": "bundles",
+            "columns_desktop": 3,
+            "columns_desktop_carousel": 3,
+            "product_grid_type": "grid",
+            "columns_gap": 20,
+            "rows_gap": 32,
+            "navigation": "none",
+            "pagination_type": "progressbar",
+            "progressbar_left": 0,
+            "progressbar_right": 0,
+            "products_to_show": 8
+          },
+          "blocks": {
+            "product-slide-item": {
+              "type": "card-product-flex",
+              "static": true,
+              "settings": {
+                "product": "{{ closest.product }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {
+                "card_product_media_flex_aXnwFU": {
+                  "type": "_card-product-media-flex",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "custom_width": 80
+                  },
+                  "blocks": {}
+                },
+                "card_product_information_4wqAip": {
+                  "type": "_card-product-information",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_alignment": "flex-start",
+                    "horizontal_alignment": "space-between",
+                    "gap_y": 0
+                  },
+                  "blocks": {
+                    "card_product_title_flex_HgegiY": {
+                      "type": "_card-product-title-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "width": "custom",
+                        "custom_width": 70,
+                        "type_preset": "custom",
+                        "font_size": "2.0rem",
+                        "padding-inline-end": 24,
+                        "padding-inline-start": 24
+                      },
+                      "blocks": {}
+                    },
+                    "card_product_price_flex_jkR6DL": {
+                      "type": "_card-product-price-flex",
+                      "settings": {
+                        "product": "{{ closest.product }}",
+                        "type_preset": "custom",
+                        "font_size": "1.8rem",
+                        "padding-inline-start": 24,
+                        "padding-inline-end": 24
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "card_product_title_flex_HgegiY",
+                    "card_product_price_flex_jkR6DL"
+                  ]
+                }
+              },
+              "block_order": [
+                "card_product_media_flex_aXnwFU",
+                "card_product_information_4wqAip"
+              ]
+            }
+          },
+          "block_order": []
+        },
+        "button_st1i": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View all",
+            "link": "/collections/bundles",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st1f",
+        "text_st1g",
+        "product_grid_st1h",
+        "button_st1i"
+      ]
+    },
+    "recipes_header": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 0
+      },
+      "blocks": {
+        "text_st1j": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Your New Go-To Recipes</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st1j"
+      ]
+    },
+    "recipes": {
+      "type": "blog-posts",
+      "blocks": {
+        "static-header": {
+          "type": "_blog-post-header",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "content_direction_mobile": "column",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_NqhTPE": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Blog posts</h2>",
+                "typing_text": false,
+                "primary_text": "Welcome to our store!",
+                "secondary_text": "Exclusive offers just for you.",
+                "third_text": "Shop now and enjoy deals!",
+                "highlight_text": false,
+                "highlight_text_content": "",
+                "highlight_text_color": "#000000",
+                "spacing_text": false,
+                "spacing_text_content": "",
+                "spacing_text_left": 0,
+                "spacing_text_right": 0,
+                "stroke_text": false,
+                "stroke_text_content": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "inherit_text_alignment": true,
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1.6rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "enable_border": false,
+                "enable_border_bottom": false,
+                "border": "none",
+                "border_width": 0,
+                "border_width_type": "100%",
+                "border_custom_width": 100,
+                "border_radius": 0,
+                "text_effect": "none",
+                "animation_repeat": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_NqhTPE"
+          ]
+        },
+        "static-blog-post-block": {
+          "type": "_blog-post-block",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "content_direction_mobile": "column",
+            "horizontal_alignment": "flex-start",
+            "horizontal_alignment_mobile": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "border": "none",
+            "border_width": 1,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_article_title_flex_HL7iKe": {
+              "type": "_card-article-title-flex",
+              "name": "Article title",
+              "settings": {
+                "article": "{{ closest.article }}",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2.0rem",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "padding-block-start": 0,
+                "padding-inline-end": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0
+              },
+              "blocks": {}
+            },
+            "card_article_description_flex_yNFhGx": {
+              "type": "_card-article-description-flex",
+              "name": "Article description",
+              "settings": {
+                "article": "{{ closest.article }}",
+                "truncatewords": 30,
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.6rem",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "padding-block-start": 0,
+                "padding-inline-end": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0
+              },
+              "blocks": {}
+            },
+            "group-media": {
+              "type": "_card-article-group-media",
+              "static": true,
+              "settings": {
+                "article": "{{ closest.article }}"
+              },
+              "blocks": {
+                "image": {
+                  "type": "_blog-post-image",
+                  "static": true,
+                  "settings": {
+                    "image_ratio": "adapt",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_radius": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            }
+          },
+          "block_order": [
+            "card_article_title_flex_HL7iKe",
+            "card_article_description_flex_yNFhGx"
+          ]
+        }
+      },
+      "settings": {
+        "blog": "recipes",
+        "section_width": "page-width",
+        "page_width_custom": 1570,
+        "section_height": "custom",
+        "section_height_custom": 28,
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "articles_to_show": 3,
+        "columns_grid": 3,
+        "columns_carousel": 4,
+        "mobile_columns_grid": "2",
+        "tablet_columns_carousel": 3,
+        "mobile_columns_carousel": 2,
+        "loop": false,
+        "navigation": "arrows",
+        "show_on_header": false,
+        "pagination_type": "bullets",
+        "content_direction": "column",
+        "content_direction_mobile": "column",
+        "header_width": 40,
+        "horizontal_alignment": "flex-start",
+        "horizontal_alignment_mobile": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "blocks_gap": 30,
+        "items_gap": 30,
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 50,
+        "padding-block-end": 50,
+        "padding-inline-start": 0,
+        "padding-inline-end": 0,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "recipes_cta": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 24,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "button_st1k": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Explore All Recipes",
+            "link": "/blogs/recipes",
+            "style_class": "button-secondary"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "button_st1k"
+      ]
+    },
+    "why": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "gap": 32,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st1l": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Why Choose Mad Hatter?</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_st1m": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Out of all the hot sauces out there, here's why we think Mad Hatter earns a spot on your counter.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "group_st27": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "content_direction": "row",
+            "content_direction_mobile": "column",
+            "wrap": "wrap",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "gap": 28,
+            "width": "fill"
+          },
+          "blocks": {
+            "group_st1q": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1n": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1o": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Built on First-Press EVOO</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1p": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Most hot sauces use vinegar or water as a base. We use premium extra virgin olive oil, so Mad Hatter works at high temperatures, penetrates marinades deeper, and adds richness instead of just acid.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1n",
+                "text_st1o",
+                "text_st1p"
+              ]
+            },
+            "group_st1u": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1r": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1s": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Organic Habaneros, Grown by Us</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1t": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We grow our own organic habanero peppers on our Virginia farm and harvest at peak flavor — not just peak heat.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1r",
+                "text_st1s",
+                "text_st1t"
+              ]
+            },
+            "group_st1y": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1v": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st1w": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Small-Batch Crafted in Virginia</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st1x": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Small-batch production means we control every step, from blending to bottling.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1v",
+                "text_st1w",
+                "text_st1x"
+              ]
+            },
+            "group_st22": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st1z": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st20": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Clean Ingredients</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st21": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>No fillers, no artificial flavors, colors, or preservatives. If you can't pronounce it, it's not in our bottles.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st1z",
+                "text_st20",
+                "text_st21"
+              ]
+            },
+            "group_st26": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "shadow_color": "rgba(0,0,0,0)",
+                "gap": 10,
+                "width": "custom",
+                "custom_width": 31,
+                "width_tablet": "custom",
+                "custom_width_tablet": 48,
+                "width_mobile": "fill"
+              },
+              "blocks": {
+                "image_st23": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "border_radius": 8
+                  },
+                  "blocks": {}
+                },
+                "text_st24": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<h3>Versatility Over Gimmicks</h3>",
+                    "underline_offset": -20,
+                    "type_preset": "h3"
+                  },
+                  "blocks": {}
+                },
+                "text_st25": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>We're not chasing the world's hottest sauce. We're making the most useful one — the bottle home cooks reach for every day.</p>",
+                    "underline_offset": -20,
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_st23",
+                "text_st24",
+                "text_st25"
+              ]
+            }
+          },
+          "block_order": [
+            "group_st1q",
+            "group_st1u",
+            "group_st1y",
+            "group_st22",
+            "group_st26"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st1l",
+        "text_st1m",
+        "group_st27"
+      ]
+    },
+    "faq": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 24,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "text_st2o": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Frequently Asked Questions</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "group_st2q": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "shadow_color": "rgba(0,0,0,0)",
+            "width": "custom",
+            "custom_width": 80,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "accordion_st2p": {
+              "type": "accordion",
+              "settings": {
+                "dividers": true
+              },
+              "blocks": {
+                "accordion_row_st28": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Where is Mad Hatter made?",
+                    "open_by_default": true
+                  },
+                  "blocks": {
+                    "text_st29": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Mad Hatter is crafted in small batches in Virginia, with organic habanero peppers grown on our own farm.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st29"
+                  ]
+                },
+                "accordion_row_st2a": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How do I use it?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2b": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Three ways: as a marinade (mix 2 parts Mad Hatter to 1 part lemon juice or vinegar), as a cooking sauce (1–2 tablespoons in stir-fries and sautés), or as a finishing oil drizzled over pizza, eggs, roasted vegetables, or grilled meats.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2b"
+                  ]
+                },
+                "accordion_row_st2c": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Is Mad Hatter vegan and gluten-free?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2d": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Yes — it contains no common allergens and is gluten-free, dairy-free, and vegan.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2d"
+                  ]
+                },
+                "accordion_row_st2e": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How hot is it?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2f": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Choose Mild, Medium, or Hot. Medium enhances without overwhelming — flavor and warmth without the burn.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2f"
+                  ]
+                },
+                "accordion_row_st2g": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How long does shipping take?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2h": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Orders ship within 1–2 business days. Free shipping on orders $50+; standard (3–5 business days) is $6.99 and expedited (2–3 business days) is $12.99.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2h"
+                  ]
+                },
+                "accordion_row_st2i": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "What is your return policy?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2j": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>We want you to love Mad Hatter. If you're not satisfied, contact us within 30 days for a full refund or exchange.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2j"
+                  ]
+                },
+                "accordion_row_st2k": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How should I store it?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2l": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Store in a cool, dark place and shake before each use. Best within 12 months of opening; refrigeration is optional but recommended after opening.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2l"
+                  ]
+                },
+                "accordion_row_st2m": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Do you offer wholesale?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_st2n": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Yes. Use our wholesale inquiry form to carry Mad Hatter in your store.</p>",
+                        "underline_offset": -20,
+                        "type_preset": "paragraph"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_st2n"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_st28",
+                "accordion_row_st2a",
+                "accordion_row_st2c",
+                "accordion_row_st2e",
+                "accordion_row_st2g",
+                "accordion_row_st2i",
+                "accordion_row_st2k",
+                "accordion_row_st2m"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_st2p"
+          ]
+        }
+      },
+      "block_order": [
+        "text_st2o",
+        "group_st2q"
+      ]
+    },
+    "newsletter": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "section_width": "full-width",
+        "background_media": "image",
+        "toggle_overlay": true,
+        "overlay_color": "rgba(20,24,10,0.6)",
+        "gap": 14,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 88,
+        "padding-block-end": 88
+      },
+      "blocks": {
+        "text_st2r": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Join The Curator's Kitchen</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_st2s": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Get our top 10 weeknight recipes plus 15% off your first order</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "email_signup_st2t": {
+          "type": "email-signup",
+          "settings": {},
+          "blocks": {}
+        },
+        "text_st2u": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Join 3,800+ home cooks who've discovered the secret to easier, better-tasting meals. Unsubscribe anytime.</p>",
+            "underline_offset": -20,
+            "type_preset": "custom",
+            "width": "100%",
+            "alignment": "center",
+            "font_size": "1.2rem"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st2r",
+        "text_st2s",
+        "email_signup_st2t",
+        "text_st2u"
+      ]
+    },
+    "final_cta": {
+      "type": "section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "gap": 20,
+        "horizontal_alignment_flex_direction_column": "center",
+        "padding-block-start": 88,
+        "padding-block-end": 88
+      },
+      "blocks": {
+        "text_st2v": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Ready to Transform Your Cooking?</h2>",
+            "underline_offset": -20,
+            "type_preset": "h2",
+            "width": "100%",
+            "alignment": "center"
+          },
+          "blocks": {}
+        },
+        "text_st2w": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Whether you're mastering meal prep, elevating weeknight dinners, or hosting your next dinner party, Mad Hatter gives you the versatility you need in one beautiful bottle.</p>",
+            "underline_offset": -20,
+            "type_preset": "paragraph",
+            "width": "custom",
+            "alignment": "center",
+            "unit": "pixel",
+            "custom_width_pixel": 760
+          },
+          "blocks": {}
+        },
+        "button_st2x": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop Bundles & Save",
+            "link": "/collections/bundles",
+            "buttons_padding_vertical": 16,
+            "buttons_padding_horizontal": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_st2v",
+        "text_st2w",
+        "button_st2x"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "build_pack",
+    "value_prop",
+    "bestsellers",
+    "reviews",
+    "bundles",
+    "recipes_header",
+    "recipes",
+    "recipes_cta",
+    "why",
+    "faq",
+    "newsletter",
+    "final_cta"
+  ]
+}

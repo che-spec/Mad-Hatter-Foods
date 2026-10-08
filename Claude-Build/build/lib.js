@@ -1,0 +1,14 @@
+﻿const fs=require('fs');
+let n=0; const id=p=>`${p}_st${(++n).toString(36)}`;
+const NOSH={shadow_color:'rgba(0,0,0,0)'};
+const add=(o,items)=>{o.blocks={};o.block_order=[];items.forEach(([k,b])=>{o.blocks[k]=b;o.block_order.push(k)});return o};
+const text=(html,s={})=>[id('text'),{type:'text',name:'t:names.text',settings:{text:html,underline_offset:-20,...s},blocks:{}}];
+const h=(tag,t,s={})=>text(`<${tag}>${t}</${tag}>`,{type_preset:tag,...s});
+const p=(t,s={})=>text(`<p>${t}</p>`,{type_preset:'paragraph',...s});
+const btn=(label,link,s={})=>[id('button'),{type:'button',name:'t:names.button',settings:{label,link,...s},blocks:{}}];
+const icon=(i,s={})=>[id('icon'),{type:'icon',name:'t:names.icon',settings:{icon:i,width:48,...s},blocks:{}}];
+const image=(s={})=>[id('image'),{type:'image',name:'t:names.image',settings:{...s},blocks:{}}];
+const group=(s,items)=>[id('group'),add({type:'group',name:'t:names.group',settings:{...NOSH,...s}},items)];
+const section=(s,items)=>add({type:'section',settings:{...s}},items);
+const cw={width:'100%',alignment:'center'};
+module.exports={fs,id,NOSH,add,text,h,p,btn,icon,image,group,section,cw};
